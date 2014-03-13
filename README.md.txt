@@ -1,0 +1,1 @@
+This is Adaptive Streaming project based on DASH-MPEG.
