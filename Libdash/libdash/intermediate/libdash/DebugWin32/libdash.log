@@ -1,0 +1,17 @@
+﻿Build started 2014-03-16 10:04:00.
+     1>Project "G:\Studies\Magisterka\Repository\Libdash\libdash\libdash\libdash.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\libdash\DebugWin32\libdash.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         libdash.vcxproj -> G:\Studies\Magisterka\Repository\Libdash\libdash\bin\libdashd.dll
+       FinalizeBuildStatus:
+         Deleting file "G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\libdash\DebugWin32\libdash.unsuccessfulbuild".
+         Touching "G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\libdash\DebugWin32\libdash.lastbuildstate".
+     1>Done Building Project "G:\Studies\Magisterka\Repository\Libdash\libdash\libdash\libdash.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.08
