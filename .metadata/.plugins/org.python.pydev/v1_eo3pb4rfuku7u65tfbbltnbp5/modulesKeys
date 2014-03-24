@@ -27,6 +27,7 @@ UserList|C:\Program Files\Python27\lib\UserList.py
 UserString|C:\Program Files\Python27\lib\UserString.py
 _LWPCookieJar|C:\Program Files\Python27\lib\_LWPCookieJar.py
 _MozillaCookieJar|C:\Program Files\Python27\lib\_MozillaCookieJar.py
+__builtin__
 __future__|C:\Program Files\Python27\lib\__future__.py
 __phello__.foo|C:\Program Files\Python27\lib\__phello__.foo.py
 _abcoll|C:\Program Files\Python27\lib\_abcoll.py
@@ -35,6 +36,7 @@ _ctypes|C:\Program Files\Python27\DLLs\_ctypes.pyd
 _ctypes_test|C:\Program Files\Python27\DLLs\_ctypes_test.pyd
 _elementtree|C:\Program Files\Python27\DLLs\_elementtree.pyd
 _hashlib|C:\Program Files\Python27\DLLs\_hashlib.pyd
+_io
 _markerlib.__init__|C:\Program Files\Python27\lib\site-packages\_markerlib\__init__.py
 _markerlib.markers|C:\Program Files\Python27\lib\site-packages\_markerlib\markers.py
 _msi|C:\Program Files\Python27\DLLs\_msi.pyd
@@ -45,6 +47,7 @@ _socket|C:\Program Files\Python27\DLLs\_socket.pyd
 _sqlite3|C:\Program Files\Python27\DLLs\_sqlite3.pyd
 _ssl|C:\Program Files\Python27\DLLs\_ssl.pyd
 _strptime|C:\Program Files\Python27\lib\_strptime.py
+_subprocess
 _testcapi|C:\Program Files\Python27\DLLs\_testcapi.pyd
 _threading_local|C:\Program Files\Python27\lib\_threading_local.py
 _tkinter|C:\Program Files\Python27\DLLs\_tkinter.pyd

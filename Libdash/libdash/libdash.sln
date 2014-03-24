@@ -24,6 +24,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtsampleplayer", "qtsamplep
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client", "client\client.vcxproj", "{2FE0B020-71B4-44AC-89BC-9634A7849882}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CB8F90F3-3666-43E1-9C51-502337569FEF} = {CB8F90F3-3666-43E1-9C51-502337569FEF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

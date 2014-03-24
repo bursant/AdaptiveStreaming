@@ -1238,3 +1238,52 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.python.pydev.ui.editor.scope,,,system)
+!SESSION 2014-03-17 10:24:05.075 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.python.pydev.shared_core 1 1 2014-03-17 10:24:29.624
+!MESSAGE Error getting persisting folder
+!STACK 0
+java.lang.NullPointerException
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.<init>(AdditionalSystemInterpreterInfo.java:99)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:150)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:124)
+	at com.python.pydev.analysis.additionalinfo.AdditionalProjectInterpreterInfo.getAdditionalInfoAndNature(AdditionalProjectInterpreterInfo.java:156)
+	at com.python.pydev.analysis.additionalinfo.AdditionalProjectInterpreterInfo.getAdditionalInfoAndNature(AdditionalProjectInterpreterInfo.java:141)
+	at com.python.pydev.analysis.additionalinfo.AdditionalProjectInterpreterInfo.getAdditionalInfo(AdditionalProjectInterpreterInfo.java:128)
+	at com.python.pydev.analysis.additionalinfo.AdditionalProjectInterpreterInfo.getAdditionalInfo(AdditionalProjectInterpreterInfo.java:118)
+	at com.python.pydev.analysis.builder.PreloadAdditionalInfoPyEditListener$1.run(PreloadAdditionalInfoPyEditListener.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.python.pydev.shared_core 4 4 2014-03-17 10:24:29.696
+!MESSAGE Info: Rebuilding internal caches: .\python_v1_eo3pb4rfuku7u65tfbbltnbp5\python.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-03-17 10:24:30.523
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.python.pydev.analysis.builder.PreloadAdditionalInfoPyEditListener$1
+!SESSION 2014-03-24 18:59:57.983 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-03-24 19:00:22.224
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-03-24 19:00:22.241
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bursant'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
