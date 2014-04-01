@@ -1,0 +1,7 @@
+\select@language {polish}
+\contentsline {chapter}{\numberline {1}Wprowadzenie}{7}
+\contentsline {chapter}{\numberline {2}Zarys problemu}{9}
+\contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{11}
+\contentsline {chapter}{\numberline {4}Opis projektu i implementacji}{13}
+\contentsline {chapter}{\numberline {5}Wdro\IeC {\.z}enie i testy}{15}
+\contentsline {chapter}{\numberline {6}Podsumowanie}{17}

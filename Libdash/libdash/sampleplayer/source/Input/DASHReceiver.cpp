@@ -88,7 +88,7 @@ void*   DASHReceiver::DoBuffering   (void *receiver)
 		dashreceiver->logic->SendTime(time);
 		dashreceiver->logic->SetBufferContents(dashreceiver->buffer->Length());
 
-        std::cout << "Timer: " << time << std::endl;
+        //std::cout << "Timer: " << time << std::endl;
     }
 
     dashreceiver->buffer->SetEOS(true);

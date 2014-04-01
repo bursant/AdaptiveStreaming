@@ -1,0 +1,9 @@
+package tcptest;
+
+public class Client {
+
+	public static void main(String[] args) {
+		Socket clientSocket = new Socket("10.0.0.2", 5555);
+	}
+
+}

@@ -1,0 +1,19 @@
+package tcptest;
+
+import java.io.DataOutputStream;
+import java.net.Socket;
+
+public class Client {
+
+	public static void main(String[] args) throws Exception {
+		char buffer[] = new char[100000];
+		char sign = 'a';
+		for(int i = 0; i < 100000; i++)
+			buffer[i] = sign++;
+		Socket clientSocket = new Socket("10.0.0.2", 5555);
+		DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
+		
+		clientSocket.close();
+	}
+
+}

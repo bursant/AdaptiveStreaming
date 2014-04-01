@@ -1,0 +1,14 @@
+package tcptest;
+
+import java.net.ServerSocket;
+
+public class Server {
+
+	public static void main(String[] args) throws Exception {
+		ServerSocket serverSocket = new ServerSocket(5555);
+		
+		Socket connectionSocket = serverSocket.accept();
+		
+	}
+
+}
