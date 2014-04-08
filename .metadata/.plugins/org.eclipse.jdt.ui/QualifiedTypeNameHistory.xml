@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+<fullyQualifiedTypeName name="java.nio.file.Files"/>
+<fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+<fullyQualifiedTypeName name="pedomock.TimedSensorEvent"/>
+<fullyQualifiedTypeName name="pedomock.StepDetector"/>
+<fullyQualifiedTypeName name="pedomock.EventDetector"/>
+<fullyQualifiedTypeName name="pedomock.SensorEvent"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="pedomock.ExponentialMovingAverage"/>
 </qualifiedTypeNameHistroy>

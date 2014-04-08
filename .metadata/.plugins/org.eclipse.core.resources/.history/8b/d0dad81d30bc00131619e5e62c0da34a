@@ -1,0 +1,5 @@
+package pedomock;
+
+public class ExponentialMovingAverage {
+
+}

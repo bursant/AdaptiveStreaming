@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.19)  1 APR 2014 18:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.19)  8 APR 2014 16:05
 entering extended mode
 **praca.tex
 (G:\Studies\Magisterka\Repository\Praca\praca.tex
@@ -464,13 +464,7 @@ File: lstlang3.sty 2014/03/04 1.5c listings language file
 LaTeX Warning: Unused global option(s):
     [11pt].
 
-(G:\Studies\Magisterka\Repository\Praca\praca.aux
-(G:\Studies\Magisterka\Repository\Praca\rozdzial1.aux)
-(G:\Studies\Magisterka\Repository\Praca\rozdzial2.aux)
-(G:\Studies\Magisterka\Repository\Praca\rozdzial3.aux)
-(G:\Studies\Magisterka\Repository\Praca\rozdzial4.aux)
-(G:\Studies\Magisterka\Repository\Praca\rozdzial5.aux)
-(G:\Studies\Magisterka\Repository\Praca\rozdzial6.aux))
+(G:\Studies\Magisterka\Repository\Praca\praca.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
@@ -600,13 +594,34 @@ Rozdzia\l  2.
 
 ]
 Rozdzia\l  3.
-) [11] (G:\Studies\Magisterka\Repository\Praca\rozdzial4.tex [12
+
+LaTeX Warning: Citation `RFC3550' on page 11 undefined on input line 15.
 
 
+LaTeX Warning: Citation `RFC4340' on page 11 undefined on input line 15.
 
-]
+
+LaTeX Warning: Citation `RFC5348' on page 11 undefined on input line 15.
+
+
+LaTeX Warning: Citation `ISO-IEC-DASH' on page 11 undefined on input line 15.
+
+
+LaTeX Warning: Citation `RFC3550' on page 11 undefined on input line 23.
+
+
+LaTeX Warning: Citation `RFC5762' on page 11 undefined on input line 23.
+
+
+LaTeX Warning: Citation `RFC3551' on page 11 undefined on input line 27.
+
+[11]) [12] (G:\Studies\Magisterka\Repository\Praca\rozdzial4.tex
 Rozdzia\l  4.
-) [13] (G:\Studies\Magisterka\Repository\Praca\rozdzial5.tex [14
+) [13
+
+
+
+] (G:\Studies\Magisterka\Repository\Praca\rozdzial5.tex [14
 
 
 
@@ -635,24 +650,31 @@ No file praca.bbl.
 (G:\Studies\Magisterka\Repository\Praca\rozdzial3.aux)
 (G:\Studies\Magisterka\Repository\Praca\rozdzial4.aux)
 (G:\Studies\Magisterka\Repository\Praca\rozdzial5.aux)
-(G:\Studies\Magisterka\Repository\Praca\rozdzial6.aux)) ) 
+(G:\Studies\Magisterka\Repository\Praca\rozdzial6.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4918 strings out of 493921
- 66813 string characters out of 3144870
- 151870 words of memory out of 3000000
- 8072 multiletter control sequences out of 15000+200000
+ 4912 strings out of 493921
+ 66258 string characters out of 3144870
+ 153870 words of memory out of 3000000
+ 8078 multiletter control sequences out of 15000+200000
  67114 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,11n,45p,313b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86
-)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
-/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
-utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on praca.pdf (18 pages, 217498 bytes).
+ 34i,11n,45p,721b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/time
+s/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on praca.pdf (18 pages, 224644 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

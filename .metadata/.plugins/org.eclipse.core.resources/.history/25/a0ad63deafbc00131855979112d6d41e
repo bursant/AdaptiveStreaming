@@ -1,0 +1,85 @@
+package pedomock;
+
+public class EventDetector implements SensorEventListener {
+	
+	private final static String TAG = "StepDetector";
+    private float   mLimit = 10;
+    private float   mLastValues[] = new float[3*2];
+    private float   mScale[] = new float[2];
+    private float   mYOffset;
+
+    private float   mLastDirections[] = new float[3*2];
+    private float   mLastExtremes[][] = { new float[3*2], new float[3*2] };
+    private float   mLastDiff[] = new float[3*2];
+    private int     mLastMatch = -1;
+	
+	/*
+	 * alpha - factor for moving average
+	 * cadence - time slot between steps
+	 */
+	public EventDetector(){
+		avg = new ExponentialMovingAverage();
+		markDetection = 0;
+		stepDelay = 200;
+		maxStepDuration = 600;
+		minStepDuration = 200;
+		initialStepFound = false;
+		vectorAverageDelta = 0.1;
+	}
+	
+	@Override
+	public void onSensorChanged(SensorEvent event, long time) {
+		detectStep(event, time);
+		detectFall(event, time);
+	}
+	
+	private void detectStep(SensorEvent event, long time){
+		double vector = Math.sqrt(event.values[0]*event.values[0] + 
+				event.values[1]*event.values[1] + 
+				event.values[2]*event.values[2]);
+		
+		double average = avg.average(vector);
+		
+		float vSum = 0;
+        for (int i=0 ; i<3 ; i++) {
+            final float v = mYOffset + event.values[i] * mScale[j];
+            vSum += v;
+        }
+        int k = 0;
+        float v = vSum / 3;
+        
+        float direction = (v > mLastValues[k] ? 1 : (v < mLastValues[k] ? -1 : 0));
+        if (direction == - mLastDirections[k]) {
+            // Direction changed
+            int extType = (direction > 0 ? 0 : 1); // minumum or maximum?
+            mLastExtremes[extType][k] = mLastValues[k];
+            float diff = Math.abs(mLastExtremes[extType][k] - mLastExtremes[1 - extType][k]);
+
+            if (diff > mLimit) {
+                
+                boolean isAlmostAsLargeAsPrevious = diff > (mLastDiff[k]*2/3);
+                boolean isPreviousLargeEnough = mLastDiff[k] > (diff/3);
+                boolean isNotContra = (mLastMatch != 1 - extType);
+                
+                if (isAlmostAsLargeAsPrevious && isPreviousLargeEnough && isNotContra) {
+                    Log.i(TAG, "step");
+                    for (StepListener stepListener : mStepListeners) {
+                        stepListener.onStep();
+                    }
+                    mLastMatch = extType;
+                }
+                else {
+                    mLastMatch = -1;
+                }
+            }
+            mLastDiff[k] = diff;
+        }
+        mLastDirections[k] = direction;
+        mLastValues[k] = v;
+		
+	}
+	
+	private void detectFall(SensorEvent event, long time){
+		
+	}
+}

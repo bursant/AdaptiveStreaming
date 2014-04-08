@@ -1,8 +1,33 @@
-\chapter{Zarys problemu}
+\chapter{Przegląd istniejących rozwiązań}
 \label{cha:rozdzial3}
 
-\begin{itemize}
-\item Pokazanie jak zmienne warunki w sieci wpływają na strumieniowanie
-\item Wyjaśnienie na czym polegają problemy związane z implementacją gładkiego strumieniowania adaptacyjnego
-\item Przedstawienie istniejących rozwiązań związanych ze strumieniowaniem adaptacyjnym (wtyczka do VLC, dodatek do Youtube, wtyczka do Internet Explorera)
-\end{itemize}
+%\begin{itemize}
+%\item Określenie szerszego tła - różne podejścia do strumieniowania danych 
+%\item TCP Friendly
+%\item DCCP
+%\item RTP/RTCP
+%\item Scalable Video Coding
+%\item DASH-MPEG
+%\end{itemize}
+
+\section{Wstęp}
+
+Istnieje wiele podejść do zagadnienia jakim jest strumieniowanie danych. Najbardziej popularnym spośród opisywanych poniżej jest para protokołów: Real-time Transport Protocol~i RTP Control Protocol~\cite{RFC3550}. W niniejszym rozdziale opisane zostaną również protokoły: Datagram Congestion Control Protocol~\cite{RFC4340}, TCP Friendly~\cite{RFC5348} oraz standard DASH-MPEG~\cite{ISO-IEC-DASH}. W każdym z powyższych przypadków zostną zaprezentowane metody kontroli przeciążenia sieci i punktów końcowych transmisji.
+
+\section{Datagram Congestion Control Protocol}
+
+Opis DCCP.
+
+\section{Real-time Transport Protocol i RTP Control Protocol}
+
+RTP (Real-time Transport Protocol) pozwala na transport danych w systemach i aplikacjach czasu rzeczywistego wspierających interaktywne transmisje audio i video. Zwykle wykorzystuje UDP jako protokół transportowy, ale może działać nad innymi protokołami warstwy transportowej modelu ISO/OSI (DCCP, TCP - \cite{RFC3550, RFC5762}). Jeżeli sieć w której działa RTP wspiera multicasting to RTP pozwala na wysłanie danych do wielu odbiorców jednocześnie. RTP nie dostarcza mechanizmów QoS (Quality of Service), ani nie gwarantuje dostarczenia wysłanych danych na czas do odbiorcy.
+
+Protokół RTCP (Real-time Control Protocol) stanowi protokół kontrolny dla RTP. Bazuje na okresowej transmisji pakietów kontrolnych do wszystskich uczestników sesji. Przekazuje informacje od odbiorców do nadawców na temat jakości transmisji. Pakiety RTCP zawierają indentyfikator źródła (Canonical Name) oraz pozwalają na ustalenie liczby uczestników sesji, co pozwala na obliczenie z jaką częstotliwością należy wysyłać pakiety kontrolne.
+
+RTP przenosi dane, które zwykle wymagają ustalonej przepustowości. Dzięki temu prawdopodobieństwo, że strumień RTP będzie systematycznie zajmował coraz większe pasmo jest niewielkie. Z drugiej strony, strumień nie może też zostać ograniczony bez uszczerbku na jakości transmisji danych, szczególnie jeżeli transmisja ma charakter interaktywny. Pasmo potrzebne do sprawnej transmisji zależy od rodzaju przesyłanych danych. Rodzaj przesyłanych danych można identyfikować na podstawie pola Payload Type w nagłówku pakietu RTP. Z każdym typem związany jest profil RTP opisujący parametry transmisji (w tym wymaganą przepustowość)~\cite{RFC3551}. 
+
+\section{TCP Friendly}
+
+Opis TCP Friendly.
+
+\section{Podsumowanie}

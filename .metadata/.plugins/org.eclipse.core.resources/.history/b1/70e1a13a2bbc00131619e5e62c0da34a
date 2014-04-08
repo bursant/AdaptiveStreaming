@@ -1,0 +1,28 @@
+package pedomock;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Feeder {
+
+	public static void main(String[] args) throws IOException, ParseException {
+		List<String> input = Files.readAllLines(Paths.get("log.txt"), Charset.defaultCharset());
+		List<TimedSensorEvent> feeds = new LinkedList<TimedSensorEvent>();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss.SSS:");
+		Date date = sdf.parse(input.get(0).split(" ")[1]);
+		
+		
+		
+		for(String line : input)
+			System.out.println(line);
+	}
+
+}
