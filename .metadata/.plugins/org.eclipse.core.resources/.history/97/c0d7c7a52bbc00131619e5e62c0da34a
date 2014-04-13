@@ -1,6 +1,0 @@
-package pedomock;
-
-public class TimedSensorEvent {
-	public double delta;
-	public SensorEvent event;
-}

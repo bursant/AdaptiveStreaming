@@ -1,9 +1,0 @@
-package pedomock;
-
-public class SensorEvent {
-	public float[] values;
-	
-	public SensorEvent(){
-		values = new float[3];
-	}
-}

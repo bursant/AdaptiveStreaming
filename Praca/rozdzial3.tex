@@ -1,22 +1,50 @@
 \chapter{Przegląd istniejących rozwiązań}
 \label{cha:rozdzial3}
 
-%\begin{itemize}
-%\item Określenie szerszego tła - różne podejścia do strumieniowania danych 
-%\item TCP Friendly
-%\item DCCP
-%\item RTP/RTCP
-%\item Scalable Video Coding
-%\item DASH-MPEG
-%\end{itemize}
-
 \section{Wstęp}
 
-Istnieje wiele podejść do zagadnienia jakim jest strumieniowanie danych. Najbardziej popularnym spośród opisywanych poniżej jest para protokołów: Real-time Transport Protocol~i RTP Control Protocol~\cite{RFC3550}. W niniejszym rozdziale opisane zostaną również protokoły: Datagram Congestion Control Protocol~\cite{RFC4340}, TCP Friendly~\cite{RFC5348} oraz standard DASH-MPEG~\cite{ISO-IEC-DASH}. W każdym z powyższych przypadków zostną zaprezentowane metody kontroli przeciążenia sieci i punktów końcowych transmisji.
+Istnieje wiele podejść do zagadnienia jakim jest strumieniowanie danych. Najbardziej popularnym spośród opisywanych poniżej jest para protokołów: Real-time Transport Protocol~i RTP Control Protocol~\cite{RFC3550}. W niniejszym rozdziale opisane zostaną również protokoły: Datagram Congestion Control Protocol~\cite{RFC4340} oraz standard DASH-MPEG~\cite{ISO-IEC-DASH}. W każdym z powyższych przypadków zostną zaprezentowane metody kontroli przeciążenia sieci i punktów końcowych transmisji.
+
+\section{TCP}
 
 \section{Datagram Congestion Control Protocol}
 
-Opis DCCP.
+Protokół DCCP należy do warstwy transportowej i wspiera dwukierunkowe połączenia typu punkt-punkt. Cechą charakterystyczną tego protokołu jest niezawodne nawiązywanie i zrywanie połączenia oraz negocjacja parametrów połączenia. Sama transmisja oparta jest na przesyłaniu datagramów bez potwierdzeń. DCCP posiada kilka mechanizmów kontroli przeciążeń.
+
+Każdy ze wspieranych przez DCCP mechanizmów kontroli przeciążeń posiada identyfikator CCID (Congestion Control Identifier). W trakcie negocjacji parametrów połączenia stacje końcowe wymieniają posortowaną listę akceptowalnych CCID (od najbardziej pożądanego do najmniej pożądanego), a następnie wybierają mechanizm, którym będą posługiwać się w trakcie transmisji~\cite{RFC5762}. RFC standaryzuje dwa mechanizmy kontroli przeciążeń:
+\begin{itemize}
+  \item CCID 2 - TCP-like Congestion Control
+  \item CCID 3 - TCP-Friendly Rate Control
+\end{itemize}
+Pozostałe numery CCID (0-1 oraz 4-255) pozostają do tej pory niewykorzystane.
+
+Mechanizm TCP-like Congestion Control korzysta z AIMD (Additive Increase/Multiplicative Decrease). Jeżeli TCP wykorzystuje AIMD to po otrzymaniu każdej poprawnej wiadomości ACK od odbiorcy, nadawca powiększa wielkość \textit{cwnd} (wielkość okna) o $\frac{1}{cwnd}$. W razie utraty pakietów okno jest pomniejszane dwukrotnie~\cite{Stevens}. Omawiany mechanizm zachowuje także liczniki czasu znane z TCP oraz algorytm powolnego startu~\cite{RFC2581}. TCP-like Congestion Control powinno być wykorzystywane przez aplikacje w których bardziej preferowane jest maksymalne wykorzystanie łącza od utrzymania stabilnego pasma (np. transfer plików)~\cite{RFC4341}.
+
+TCP-Friendly Rate Control jest mechanizmem uznawanym za niezachłanny przy dzieleniu łącza z innymi strumieniami o charakterze TCP. Niezachłanność tego mechanizmu oznacza, że wykorzystuje on przepustowość nie większą niż dwukrotna wartość przepustowości, która zostałaby wykorzystana przez TCP w tych samych warunkach. TCP-Friendly Rate Control charakteryzuje się także dużo mniejszą zmiennością wartości przepustowości w czasie w porównaniu do TCP, co sprzyja zastosowaniu DCCP z CCID 3 w strumieniowaniu danych multimedialnych. `Wygładzenie' przepustowości transmisji jest okupione wolniejszą niż w TCP szybkością przystosowywania się strumienia do zmian w dostępnym paśmie~\cite{RFC5348}.
+
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics{TCP_DCCP}
+	\caption{Wykres zależności przepustowości od czasu dla protokołów TCP i DCCP.}
+	\label{TCP_DCCP}
+\end{figure}
+
+Rysunek~\ref{TCP_DCCP} przedstawia porównanie działania protokołów TCP i DCCP (CCID 3). W trakcie testu wykorzystano oprogramowanie D-ITG (Distributed Internet Traffic Generator)~\cite{D-ITG}. Test został przeprowadzony z wykorzystaniem dwóch komputerów i przełącznicy Cisco Catalyst 3550 połączonych w w jedną sieć LAN i polegał na jednoczesnym uruchomieniu dwóch strumieni (TCP i DCCP) pomiędzy stacjami końcowymi. Probkowanie przepustowości przeprowadzono co $0,5s$. Na przełącznicy zaimplementowano politykę pozwalającą na ustalenie przepustowości pomiędzy stacjami na 10Mb/s (zob. Dodatek A).
+
+\begin{figure}[h!]
+	\centering
+	\begin{tabular}{ l | c | r }
+  		Protokół & Średnia przepustowość & Odchylenie Standardowe \\
+  		\hline
+  		TCP & 2016 Kb/s & 206 \\
+  		DCCP (CCID 3) & 2665 Kb/s & 74 \\
+	\end{tabular}
+	\caption{Tabela porównawcza protokołów TCP i DCCP.}
+	\label{TCP_DCCP_table}
+\end{figure}
+
+Tabela z rysunku~\ref{TCP_DCCP_table} przedstawia porównanie średniej przepustowości~i ochylenia standardowego dla protokołów TCP i DCCP. Przeprowadzony test potwierdza zachowanie się protokołu DCCP (CCID~3) opisane w RFC 5348~\cite{RFC5348}. 
 
 \section{Real-time Transport Protocol i RTP Control Protocol}
 
@@ -24,10 +52,45 @@ RTP (Real-time Transport Protocol) pozwala na transport danych w systemach i apl
 
 Protokół RTCP (Real-time Control Protocol) stanowi protokół kontrolny dla RTP. Bazuje na okresowej transmisji pakietów kontrolnych do wszystskich uczestników sesji. Przekazuje informacje od odbiorców do nadawców na temat jakości transmisji. Pakiety RTCP zawierają indentyfikator źródła (Canonical Name) oraz pozwalają na ustalenie liczby uczestników sesji, co pozwala na obliczenie z jaką częstotliwością należy wysyłać pakiety kontrolne.
 
-RTP przenosi dane, które zwykle wymagają ustalonej przepustowości. Dzięki temu prawdopodobieństwo, że strumień RTP będzie systematycznie zajmował coraz większe pasmo jest niewielkie. Z drugiej strony, strumień nie może też zostać ograniczony bez uszczerbku na jakości transmisji danych, szczególnie jeżeli transmisja ma charakter interaktywny. Pasmo potrzebne do sprawnej transmisji zależy od rodzaju przesyłanych danych. Rodzaj przesyłanych danych można identyfikować na podstawie pola Payload Type w nagłówku pakietu RTP. Z każdym typem związany jest profil RTP opisujący parametry transmisji (w tym wymaganą przepustowość)~\cite{RFC3551}. 
+\begin{figure}[h!]
+	\centering
+	\begin{tabular}{ l | c | r }
+  		Nazwa & Typ & Zalecane pasmo \\
+  		\hline
+  		GSM & audio & 13 Kb/s \\
+  		G728 & audio & 16 Kb/s  \\
+  		G729 & audio & 8 Kb/s  \\
+	\end{tabular}
+	\caption{Przykładowe typy pakietów RTP.}
+	\label{RTP_table}
+\end{figure}
 
-\section{TCP Friendly}
+RTP przenosi dane, które zwykle wymagają ustalonej przepustowości. Dzięki temu prawdopodobieństwo, że strumień RTP będzie systematycznie zajmował coraz większe pasmo jest niewielkie. Z drugiej strony, strumień nie może też zostać ograniczony bez uszczerbku na jakości transmisji danych, szczególnie jeżeli transmisja ma charakter interaktywny. Pasmo potrzebne do sprawnej transmisji zależy od rodzaju przesyłanych danych. Rodzaj przesyłanych danych można identyfikować na podstawie pola Payload Type (zob. rysunek~\ref{RTP_table}) w nagłówku pakietu RTP. Z każdym typem związany jest profil RTP opisujący parametry transmisji (w tym wymaganą przepustowość)~\cite{RFC3551}. Protokół RTP nie posiada odpowiednich mechanizmów kontroli przeciążeń, dlatego powinien korzystać z mechanizmów dostępnych w protokołach niższych warstw (np. DCCP CCID 3).
 
-Opis TCP Friendly.
+\section{Dynamic Adaptive Streaming over HTTP}
+
+Dynamic Adaptive Streaming over HTTP (DASH) jest adaptacyjną techniką strumieniowania danych przez Internet. DASH został opracowany przez grupę MPEG i stał się standardem w kwietniu 2012 dzięki publikacji ISO/IEC 23009-1:2012~\cite{ISO-IEC-DASH}. W lipcu 2013 wprowadzono poprawki do standardu.
+
+DASH jest technologią spokrewnioną z Microsoft Smooth Streaming~\cite{MicroS}, Adobe Systems HTTP Dynamic Streaming~\cite{ADOBES} oraz Apple Inc. HTTP Live Streaming~\cite{APPLES}.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics{dash}
+	\caption{Standard MPEG-DASH i przykładowa architektura klienta DASH, źródło:~\cite{DASH}}
+	\label{dash}
+\end{figure}
+
+W podejściu stosowanym w standardzie DASH logika strumieniowania zostaje w całości przeniesiona na aplikację klienta. Rolę serwera DASH może pełnić zwykły serwer plików. Plik multimedialny, który będzie podlegał operacji strumieniowania, należy odpowiednio przygotować. Plik powinien być dostępny w kilku wersjach różniących się jakością (a co za tym idzie również wielkością).  Każda kopia powinna zostać podzielona na segmenty o równej długości. Na rysunku~\ref{dash}~kopie pliku multimedialnego składają się z segmentów (czerwone prostokąty) umieszczonych na serwerze HTTP (lewa strona rysunku). Od długości segmentów zależeć będzie szybkość przystosowywania się aplikacji DASH do zmieniającej się przepustowości sieci. Tak przygotowane pliki należy opisać za pomocą xml w postaci dokumentu MPD (Media Presentation Description). Plik MPD zawiera adresy URL poszczególnych segmentów, informacje na teamt kodowania danych, rozdzielczości oraz wymaganych przepustowości. Następnie MPD musi zostać dostarczony klientowi, który parsując jego zawartość otrzyma informacje na temat pliku multimedialnego, który ma strumieniować. W trakcie strumieniowania, aplikacja klienta wybiera w sposób dynamiczny wersjię pliku i pobiera kolejny segment z pomocą protokołu HTTP. 
+
+Standard DASH działa niezależnie od sposobu kodowania danych i jest łatwo implementowalny w Internecie. Dzięki wykorzystaniu protokołu HTTP może współpracować z istniejącą infrastrukturą w postaci filtrów, zapór, NAT'ów i cache'ów~\cite{DASH}.
 
 \section{Podsumowanie}
+
+W powyższym rozdziale opisano kilka podejść do problemu strumieniowania danych multimedialnych. Opisane zostały protokoły TCP, DCCP, RTP/RTCP oraz standard DASH-MPEG. Szczególną uwagę poświęcono mechanizmom adaptacji do zmniennej przepustowości sieci i cechom jakie powinny posiadać protokoły przeznaczone do strumieniowania danych. Do cech tych należą:
+\begin{itemize}
+\item kontrola przeciążeń i przepływu (TCP)
+\item jednostajne wykorzystanie łącza (DCCP CCID3)
+\item kanał zwrotny przenoszący informacje na temat sesji (RTCP)
+\item możliwość dostosowana parametrów transmisji do warunków w sieci (DASH, TCP)
+\end{itemize}
+

@@ -1,26 +1,10 @@
-﻿Build started 2014-03-16 10:56:22.
-     1>Project "G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\sampleplayer.vcxproj" on node 2 (rebuild target(s)).
+﻿Build started 2014-04-13 15:52:32.
+     1>Project "G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\sampleplayer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\sampleplayer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\\" /Fd"G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\Decoder\LibavDecoder.cpp source\Input\AdaptationLogic.cpp source\Input\DASHReceiver.cpp source\Input\MediaObjectBuffer.cpp source\Input\MediaObject.cpp source\Input\MultiThreading.cpp source\Renderer\SDLRenderer.cpp source\sampleplayer.cpp
-         sampleplayer.cpp
-         SDLRenderer.cpp
-         MultiThreading.cpp
-         MediaObject.cpp
-         MediaObjectBuffer.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\\" /Fd"G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\Input\DASHReceiver.cpp
          DASHReceiver.cpp
-         AdaptationLogic.cpp
-     1>g:\studies\magisterka\repository\libdash\libdash\sampleplayer\source\input\adaptationlogic.cpp(71): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>g:\studies\magisterka\repository\libdash\libdash\sampleplayer\source\input\adaptationlogic.cpp(103): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>g:\studies\magisterka\repository\libdash\libdash\sampleplayer\source\input\adaptationlogic.cpp(152): warning C4018: '>=' : signed/unsigned mismatch
-         LibavDecoder.cpp
-     1>g:\studies\magisterka\repository\libdash\libdash\sampleplayer\source\decoder\libavdecoder.cpp(215): warning C4244: 'argument' : conversion from 'double' to 'DWORD', possible loss of data
-     1>g:\studies\magisterka\repository\libdash\libdash\sampleplayer\source\decoder\libavdecoder.cpp(244): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>g:\studies\magisterka\repository\libdash\libdash\sampleplayer\source\decoder\libavdecoder.cpp(251): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Studies\Magisterka\Repository\Libdash\libdash\bin\sampleplayer.exe" /INCREMENTAL:NO /NOLOGO G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\libav\lib\avcodec.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\libav\lib\avdevice.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\libav\lib\avfilter.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\libav\lib\avformat.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\libav\lib\avutil.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\libav\lib\postproc.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\libav\lib\swresample.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\libav\lib\swscale.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\sdl\lib\x86\SDL.lib G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\..\sdl\lib\x86\SDLmain.lib G:\Studies\Magisterka\Repository\Libdash\libdash\bin\libdashd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\sampleplayer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\Studies\Magisterka\Repository\Libdash\libdash\bin\sampleplayer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Studies\Magisterka\Repository\Libdash\libdash\bin\sampleplayer.lib" /MACHINE:X86 G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\LibavDecoder.obj
          G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\AdaptationLogic.obj
@@ -38,8 +22,8 @@
        FinalizeBuildStatus:
          Deleting file "G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\sampleplayer.unsuccessfulbuild".
          Touching "G:\Studies\Magisterka\Repository\Libdash\libdash\intermediate\sampleplayer\DebugWin32\sampleplayer.lastbuildstate".
-     1>Done Building Project "G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\sampleplayer.vcxproj" (rebuild target(s)).
+     1>Done Building Project "G:\Studies\Magisterka\Repository\Libdash\libdash\sampleplayer\sampleplayer.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:06.38
+Time Elapsed 00:00:05.02

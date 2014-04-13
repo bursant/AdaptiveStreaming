@@ -1,5 +1,0 @@
-package pedomock;
-
-public class TimedSensorEvent {
-
-}

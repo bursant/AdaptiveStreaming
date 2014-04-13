@@ -1,0 +1,69 @@
+\chapter{Konfiguracja przełącznicy}
+\label{cha:dodatekA}
+
+Poniżej znajduje się konfiguracja przełącznicy wykorzystywanej do testów. Pominięta została konfiguracja interfejsów FastEthernet 3-24 oraz interfejsów GigabitEthernet.
+
+\begin{verbatim}
+!
+version 12.2
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname Switch
+!
+!
+no aaa new-model
+ip subnet-zero
+!
+mls qos aggregate-policer aggpolicer 10000000 8000 exceed-action drop
+mls qos
+!
+no file verify auto
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+!
+vlan internal allocation policy ascending
+!
+class-map match-all tcpmap
+  match access-group 145
+!
+!
+policy-map test
+  class tcpmap
+    police aggregate aggpolicer
+!
+!
+!
+interface FastEthernet0/1
+ switchport mode dynamic desirable
+ service-policy input test
+!
+interface FastEthernet0/2
+ switchport mode dynamic desirable
+ service-policy input test
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip http server
+!
+!
+!
+!
+access-list 145 permit tcp any any
+!
+control-plane
+!
+!
+line con 0
+line vty 5 15
+!
+!
+end
+\end{verbatim}
