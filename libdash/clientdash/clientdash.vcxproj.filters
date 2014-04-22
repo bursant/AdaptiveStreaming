@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{b908df3d-d4e3-4477-8117-c48b757fd999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{bc2b4fd4-be67-4728-a866-cf3832ac1d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{80b189c7-b1cb-4b54-93e3-5915e8362fce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientDASH.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferItem.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Adaptation.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Downloader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLRenderer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LibavDecoder.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ILogger.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="IAdaptation.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IBufferItem.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferItem.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Adaptation.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="IBuffer.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="IDownloader.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Downloader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="IAudioObserver.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IVideoObserver.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="LibavDecoder.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLRenderer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
