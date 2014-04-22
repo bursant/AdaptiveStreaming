@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 2.8)
 
-include_directories(libxml2/include)
-include_directories(libdash/include)
-include_directories(sdl/include)
-include_directories(zlib/include)
-include_directories(iconv/include)
+find_package(LibXml2 REQUIRED)
+find_package(ZLIB REQUIRED)
+find_package(CURL REQUIRED)
 
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
-add_subdirectory(libdash)
-add_subdirectory(libdash_networkpart_test)
+include_directories(include)
+
+
+file(GLOB_RECURSE libdash_source *.cpp)
+
+add_library(dash SHARED ${libdash_source})
+target_link_libraries(dash ${CURL_LIBRARIES} ${ZLIB_LIBRARIES} ${LIBXML2_LIBRARIES})
