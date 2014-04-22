@@ -36,6 +36,9 @@
     <ClCompile Include="LibavDecoder.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Multithreading.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ILogger.h">
@@ -79,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="SDLRenderer.h">
       <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Multithreading.h">
+      <Filter>Interfaces</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

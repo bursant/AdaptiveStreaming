@@ -1,5 +1,6 @@
 #pragma once
 #include "IAdaptation.h"
+#include "BufferItem.h"
 #include <vector>
 
 using namespace dash::mpd;

@@ -1,14 +1,15 @@
 C:\USERS\BURSANT\REPO\LIBDASH\BIN\CLIENTDASH.EXE
-C:\USERS\BURSANT\REPO\LIBDASH\BIN\CLIENTDASH.PDB
+C:\Users\bursant\repo\libdash\bin\clientdash.pdb
 C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\ADAPTATION.OBJ
 C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\BUFFER.OBJ
 C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\BUFFERITEM.OBJ
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\cl.command.1.tlog
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\CL.read.1.tlog
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\CL.write.1.tlog
-C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\CLIENTDASH.EXE.INTERMEDIATE.MANIFEST
+C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\clientdash.exe.intermediate.manifest
 C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\CLIENTDASH.OBJ
 C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\DOWNLOADER.OBJ
+C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\LIBAVDECODER.OBJ
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\link.command.1.tlog
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\link.read.1.tlog
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\link.write.1.tlog
@@ -16,5 +17,7 @@ C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\LOGGER.OBJ
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\mt.command.1.tlog
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\mt.read.1.tlog
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\mt.write.1.tlog
+C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\MULTITHREADING.OBJ
+C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\SDLRENDERER.OBJ
 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\vc100.idb
 C:\USERS\BURSANT\REPO\LIBDASH\INTERMEDIATE\CLIENTDASH\DEBUGWIN32\VC100.PDB

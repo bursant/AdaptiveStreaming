@@ -3,15 +3,17 @@
 #include "libdash.h"
 #include "IBuffer.h"
 #include "IAdaptation.h"
+#include "Multithreading.h"
+#include "BufferItem.h"
 
 using namespace dash;
 using namespace dash::mpd;
 
-class Downloader : IDownloader
+class Downloader : public IDownloader
 {
     public:
         int IORead(uint8_t *buf, int buf_size);
-		Downloader();
+		Downloader(IBuffer* buffer, IMPD* mpd, IDASHManager* manager, IAdaptation* adaptation);
 		~Downloader();
 
 	private:              
@@ -20,5 +22,6 @@ class Downloader : IDownloader
 		IBuffer* buffer;
 		int count;
 		IAdaptation* adaptation;
+		THREAD_HANDLE bufferingThread;
 		static void* bufferingProcedure(void* downloader);
 };

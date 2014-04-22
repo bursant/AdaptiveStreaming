@@ -39,8 +39,8 @@ namespace sampleplayer
                 dash::mpd::IRepresentation      *rep;
                 dash::network::DownloadState    state;
 
-                mutable CRITICAL_SECTION    stateLock;
-                mutable CONDITION_VARIABLE  stateChanged;
+                mutable CRITICAL_SECTION stateLock;
+                mutable CONDITION_VARIABLE stateChanged;
         };
     }
 }
