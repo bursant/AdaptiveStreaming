@@ -1,8 +1,22 @@
 \chapter{Zarys problemu}
 \label{cha:rozdzial2}
 
-\begin{itemize}
-\item Pokazanie jak zmienne warunki w sieci wpływają na strumieniowanie
-\item Wyjaśnienie na czym polegają problemy związane z implementacją gładkiego strumieniowania adaptacyjnego
-\item Przedstawienie istniejących rozwiązań związanych ze strumieniowaniem adaptacyjnym (wtyczka do VLC, dodatek do Youtube, wtyczka do Internet Explorera)
-\end{itemize}
+%\begin{itemize}
+%\item Pokazanie jak zmienne warunki w sieci wpływają na strumieniowanie
+%\item Wyjaśnienie na czym polegają problemy związane z implementacją gładkiego strumieniowania adaptacyjnego
+%\item Przedstawienie istniejących rozwiązań związanych ze strumieniowaniem adaptacyjnym (wtyczka do VLC, dodatek do Youtube, wtyczka do Internet Explorera)
+%\end{itemize}
+
+\section{Wstęp}
+
+Poniższy rozdział zawiera opisy problemów związanych ze strumieniowaniem danych w sieciach komputerowych. Aplikacje służące do strumieniowania danych można zbudować na podstawie wielu protokołów i standardów. Każda z technologii ma zalety z których aplikacja może skorzystać oraz wady, które aplikacja powinna korygować lub zmniejszać ich wpływ na jakość strumieniowania. Rozdział skupia się na wadach istniejących rozwiązań w kontekście strumieniowania danych multimedialnych oraz danych interaktywnych.
+
+\section{Problem strumieniowania danych}
+
+Protokoły oparte o datagramy takie jak User Datagram Protocol pozwalają na wysłanie strumienia danych jako serii pakietów. Takie rozwiązanie jest proste i wydajne, ale UDP nie daje żadnych gwarancji, że pakiety dotrą nienaruszone, w odpowiedniej kolejności i na czas do odbiorcy. Brak mechanizmów kontrolujących powyższe problemy oznacza, że jakość strumienia może być słaba - dane przez niego przenoszone będą niepoprawne, spóźnione lub odbiorca nie otrzyma ich wcale. Część z tych problemów została rozwiązana w Datagram Congestion Control Protocol (zob. \ref{sec:DCCP}), który wprowadza kontrolę przeciążeń. Pozwala to na kompromis pomiędzy możliwością wykorzystania łącza (UDP wykorzystuje łącze w sposób bardziej agresywny od TCP i DCCP), a adaptacją do zmieniającego się dostępnego pasma. UDP nie posiada mechanizmów adaptacji, TCP reaguje szybciej od DCCP na zmienność pasma. DCCP pozwala na kontrolowanie ilości utraconych pakietów w transmisji i jest TCP friendly, co oznacza, że może wykorzystać do przepustowość nie większą niż dwukrotna przepustowość jaką wykorzystałoby TCP w tych samych warunkach. Protokoły datagramowe są dobrze przystosowane do transmisji interaktywnych w których utrata pojedynczych pakietów nie jest problematyczna, natomiast wymagane jest małe opóźnienie (np. gry komputerowe z trybem multiplayer).
+
+Niezawodne protokoły (np. Transmission Control Protocol) gwaratują poprawność i kolejność danych. Zwykle mechanizmy zapewniające powyższe są oparte na licznikach czasu i retransmisjach, co może powodować spore opóźnienia w transmisji. Strumienie oparte na takich protokołach są wrażliwe na zmnieniającą się dostępną przepustowość sieci i ilość danych, które dostarczają do odbiorcy może być zmienna w czasie. Dlatego aplikacje oparte na technologiach tego typu zwykle implementują bufory, które pozwalają na zmniejszenie wpływu zmienności strumienia na działanie programu.
+
+
+
+\section{Podsumowanie}
