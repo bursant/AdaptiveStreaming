@@ -17,7 +17,6 @@
     <ClCompile Include="ClientDASH.cpp" />
     <ClCompile Include="Downloader.cpp" />
     <ClCompile Include="LibavDecoder.cpp" />
-    <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Multithreading.cpp" />
     <ClCompile Include="SDLRenderer.cpp" />
   </ItemGroup>
@@ -31,10 +30,8 @@
     <ClInclude Include="IBuffer.h" />
     <ClInclude Include="IBufferItem.h" />
     <ClInclude Include="IDownloader.h" />
-    <ClInclude Include="ILogger.h" />
     <ClInclude Include="IVideoObserver.h" />
     <ClInclude Include="LibavDecoder.h" />
-    <ClInclude Include="Logger.h" />
     <ClInclude Include="Multithreading.h" />
     <ClInclude Include="SDLRenderer.h" />
   </ItemGroup>

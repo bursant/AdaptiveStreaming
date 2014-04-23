@@ -15,9 +15,6 @@
     <ClCompile Include="ClientDASH.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="BufferItem.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -41,12 +38,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ILogger.h">
-      <Filter>Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="IAdaptation.h">
       <Filter>Interfaces</Filter>
     </ClInclude>
