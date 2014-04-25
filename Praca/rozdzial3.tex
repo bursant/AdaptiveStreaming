@@ -38,7 +38,7 @@ Każdy ze wspieranych przez DCCP mechanizmów kontroli przeciążeń posiada ide
 \end{itemize}
 Pozostałe numery CCID (0-1 oraz 4-255) pozostają do tej pory niewykorzystane.
 
-Mechanizm TCP-like Congestion Control korzysta z AIMD (Additive Increase/Multiplicative Decrease). Jeżeli TCP wykorzystuje AIMD to po otrzymaniu każdej poprawnej wiadomości ACK od odbiorcy, nadawca powiększa wielkość \textit{cwnd} (wielkość okna) o $\frac{1}{cwnd}$. W razie utraty pakietów okno jest pomniejszane dwukrotnie~\cite{Stevens}. Omawiany mechanizm zachowuje także liczniki czasu znane z TCP oraz algorytm powolnego startu~\cite{RFC2581}. TCP-like Congestion Control powinno być wykorzystywane przez aplikacje w których bardziej preferowane jest maksymalne wykorzystanie łącza od utrzymania stabilnego pasma (np. transfer plików)~\cite{RFC4341}.
+Mechanizm TCP-like Congestion Control korzysta z AIMD (Additive Increase/Multiplicative Decrease). Jeżeli TCP wykorzystuje AIMD to po otrzymaniu każdej poprawnej wiadomości ACK od odbiorcy, nadawca powiększa wielkość \textit{cwnd} (wielkość okna) o $\frac{1}{cwnd}$. W razie utraty pakietów okno jest pomniejszane dwukrotnie~\cite{Stevens}. Omawiany mechanizm zachowuje także liczniki czasu znane z TCP oraz algorytm Slow Start~\cite{RFC2581}. TCP-like Congestion Control powinno być wykorzystywane przez aplikacje w których bardziej preferowane jest maksymalne wykorzystanie łącza od utrzymania stabilnego pasma (np. transfer plików)~\cite{RFC4341}.
 
 TCP-Friendly Rate Control jest mechanizmem uznawanym za niezachłanny przy dzieleniu łącza z~innymi strumieniami o charakterze TCP. Niezachłanność tego mechanizmu oznacza, że wykorzystuje on przepustowość nie większą niż dwukrotna wartość przepustowości, która zostałaby wykorzystana przez TCP w tych samych warunkach. TCP-Friendly Rate Control charakteryzuje się także dużo mniejszą zmiennością wartości przepustowości w czasie w porównaniu do TCP, co sprzyja zastosowaniu DCCP z CCID 3 w strumieniowaniu danych multimedialnych. `Wygładzenie' przepustowości transmisji jest okupione wolniejszą niż w TCP szybkością przystosowywania się strumienia do zmian w dostępnym paśmie~\cite{RFC5348}.
 
@@ -50,21 +50,21 @@ TCP-Friendly Rate Control jest mechanizmem uznawanym za niezachłanny przy dziel
 	\label{TCP_DCCP}
 \end{figure}
 
-Rysunek~\ref{TCP_DCCP} przedstawia porównanie działania protokołów TCP i DCCP (CCID 3). W trakcie testu wykorzystano oprogramowanie D-ITG (Distributed Internet Traffic Generator)~\cite{D-ITG}. Test został przeprowadzony z wykorzystaniem dwóch komputerów i przełącznicy Cisco Catalyst 3550 połączonych w~jedną sieć LAN i polegał na jednoczesnym uruchomieniu dwóch strumieni (TCP i DCCP) pomiędzy stacjami końcowymi. Probkowanie przepustowości przeprowadzono co $0,5s$. Na przełącznicy zaimplementowano politykę pozwalającą na ustalenie przepustowości pomiędzy stacjami na 10Mb/s (zob. Dodatek~A).
+Rysunek~\ref{TCP_DCCP} przedstawia porównanie działania protokołów TCP i DCCP (CCID 3). W trakcie testu wykorzystano oprogramowanie D-ITG (Distributed Internet Traffic Generator)~\cite{D-ITG}. Test został przeprowadzony z wykorzystaniem dwóch komputerów i przełącznicy Cisco Catalyst 3550 połączonych w~jedną sieć LAN i polegał na jednoczesnym uruchomieniu dwóch strumieni (TCP i DCCP) pomiędzy stacjami końcowymi. Próbkowanie przepustowości przeprowadzono co $0,5s$. Na przełącznicy zaimplementowano politykę pozwalającą na ustalenie przepustowości pomiędzy stacjami na 10Mb/s (zob. Dodatek~A).
 
 \begin{figure}
 	\centering
 	\begin{tabular}{ l | c | r }
   		Protokół & Średnia przepustowość & Odchylenie Standardowe \\
   		\hline
-  		TCP & 2016 Kb/s & 206 \\
-  		DCCP (CCID 3) & 2665 Kb/s & 74 \\
+  		TCP & 3020 Kb/s & 209 \\
+  		DCCP (CCID 3) & 3703 Kb/s & 74 \\
 	\end{tabular}
 	\caption{Tabela porównawcza protokołów TCP i DCCP.}
 	\label{TCP_DCCP_table}
 \end{figure}
 
-Tabela z rysunku~\ref{TCP_DCCP_table} przedstawia porównanie średniej przepustowości~i ochylenia standardowego dla protokołów TCP i DCCP. Przeprowadzony test potwierdza zachowanie się protokołu DCCP (CCID~3) opisane w RFC 5348~\cite{RFC5348}. 
+Tabela z rysunku~\ref{TCP_DCCP_table} przedstawia porównanie średniej przepustowości~i odchylenia standardowego dla protokołów TCP i DCCP. Przeprowadzony test potwierdza zachowanie protokołu DCCP (CCID~3) opisane w RFC 5348~\cite{RFC5348}. 
 
 \section{Real-time Transport Protocol i RTP Control Protocol}
 

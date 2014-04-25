@@ -1,0 +1,18 @@
+\select@language {polish}
+\contentsline {chapter}{\numberline {1}Wprowadzenie}{7}
+\contentsline {chapter}{\numberline {2}Zarys problemu}{9}
+\contentsline {section}{\numberline {2.1}Wst\IeC {\k e}p}{9}
+\contentsline {section}{\numberline {2.2}Problem strumieniowania danych}{9}
+\contentsline {section}{\numberline {2.3}Podsumowanie}{10}
+\contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{11}
+\contentsline {section}{\numberline {3.1}Wst\IeC {\k e}p}{11}
+\contentsline {section}{\numberline {3.2}Transmission Control Protocol}{11}
+\contentsline {section}{\numberline {3.3}Datagram Congestion Control Protocol}{12}
+\contentsline {section}{\numberline {3.4}Real-time Transport Protocol i RTP Control Protocol}{14}
+\contentsline {section}{\numberline {3.5}Dynamic Adaptive Streaming over HTTP}{15}
+\contentsline {section}{\numberline {3.6}Podsumowanie}{16}
+\contentsline {chapter}{\numberline {4}Opis projektu i implementacji}{17}
+\contentsline {chapter}{\numberline {5}Wdro\IeC {\.z}enie i testy}{19}
+\contentsline {chapter}{\numberline {6}Podsumowanie}{21}
+\contentsline {chapter}{\numberline {A}Konfiguracja prze\IeC {\l }\IeC {\k a}cznicy}{23}
+\contentsline {chapter}{\hspace {13 pt} Bibliografia}{25}
