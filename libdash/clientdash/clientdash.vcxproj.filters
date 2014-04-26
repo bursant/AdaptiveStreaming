@@ -18,9 +18,6 @@
     <ClCompile Include="BufferItem.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Adaptation.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Buffer.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -36,6 +33,12 @@
     <ClCompile Include="Multithreading.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="RandomAdaptation.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LowestAdaptation.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IAdaptation.h">
@@ -45,9 +48,6 @@
       <Filter>Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="BufferItem.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Adaptation.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="IBuffer.h">
@@ -76,6 +76,12 @@
     </ClInclude>
     <ClInclude Include="Multithreading.h">
       <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomAdaptation.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LowestAdaptation.h">
+      <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

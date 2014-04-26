@@ -1,21 +1,25 @@
-﻿Build started 2014-04-22 22:11:51.
+﻿Build started 2014-04-26 15:17:42.
      1>Project "C:\Users\bursant\repo\libdash\clientdash\clientdash.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\clientdash.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\clientdash.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\boost_1_55_0 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\\" /Fd"C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Downloader.cpp
-         Downloader.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\boost_1_55_0 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\\" /Fd"C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ClientDASH.cpp RandomAdaptation.cpp
+         RandomAdaptation.cpp
+     1>c:\users\bursant\repo\libdash\clientdash\randomadaptation.cpp(18): warning C4018: '>=' : signed/unsigned mismatch
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         ClientDASH.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\bursant\repo\libdash\bin\clientdash.exe" /INCREMENTAL:NO /NOLOGO C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avcodec.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avdevice.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avfilter.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avformat.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avutil.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\postproc.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\swresample.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\swscale.lib C:\Users\bursant\repo\libdash\clientdash\..\sdl\lib\x86\SDL.lib C:\Users\bursant\repo\libdash\clientdash\..\sdl\lib\x86\SDLmain.lib C:\Users\bursant\repo\libdash\bin\libdashd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\clientdash.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\bursant\repo\libdash\bin\clientdash.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\bursant\repo\libdash\bin\clientdash.lib" /MACHINE:X86 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\Adaptation.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\bursant\repo\libdash\bin\clientdash.exe" /INCREMENTAL:NO /NOLOGO C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avcodec.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avdevice.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avfilter.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avformat.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\avutil.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\postproc.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\swresample.lib C:\Users\bursant\repo\libdash\clientdash\..\libav\lib\swscale.lib C:\Users\bursant\repo\libdash\clientdash\..\sdl\lib\x86\SDL.lib C:\Users\bursant\repo\libdash\clientdash\..\sdl\lib\x86\SDLmain.lib C:\Users\bursant\repo\libdash\bin\libdashd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\clientdash.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\bursant\repo\libdash\bin\clientdash.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\bursant\repo\libdash\bin\clientdash.lib" /MACHINE:X86 C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\LowestAdaptation.obj
          C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\Buffer.obj
          C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\BufferItem.obj
          C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\ClientDASH.obj
          C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\Downloader.obj
          C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\LibavDecoder.obj
-         C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\Logger.obj
          C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\Multithreading.obj
+         C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\RandomAdaptation.obj
          C:\Users\bursant\repo\libdash\intermediate\clientdash\DebugWin32\SDLRenderer.obj
-     1>Adaptation.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+     1>LowestAdaptation.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
      1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
          clientdash.vcxproj -> C:\Users\bursant\repo\libdash\bin\clientdash.exe
        Manifest:
@@ -27,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.32
+Time Elapsed 00:00:24.57

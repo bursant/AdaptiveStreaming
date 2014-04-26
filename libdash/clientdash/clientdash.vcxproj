@@ -11,17 +11,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Adaptation.cpp" />
+    <ClCompile Include="LowestAdaptation.cpp" />
     <ClCompile Include="Buffer.cpp" />
     <ClCompile Include="BufferItem.cpp" />
     <ClCompile Include="ClientDASH.cpp" />
     <ClCompile Include="Downloader.cpp" />
     <ClCompile Include="LibavDecoder.cpp" />
     <ClCompile Include="Multithreading.cpp" />
+    <ClCompile Include="RandomAdaptation.cpp" />
     <ClCompile Include="SDLRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Adaptation.h" />
+    <ClInclude Include="LowestAdaptation.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="BufferItem.h" />
     <ClInclude Include="Downloader.h" />
@@ -33,6 +34,7 @@
     <ClInclude Include="IVideoObserver.h" />
     <ClInclude Include="LibavDecoder.h" />
     <ClInclude Include="Multithreading.h" />
+    <ClInclude Include="RandomAdaptation.h" />
     <ClInclude Include="SDLRenderer.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
