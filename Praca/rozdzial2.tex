@@ -1,8 +1,20 @@
 \chapter{Zarys problemu}
 \label{cha:rozdzial2}
 
-\begin{itemize}
-\item Pokazanie jak zmienne warunki w sieci wpływają na strumieniowanie
-\item Wyjaśnienie na czym polegają problemy związane z implementacją gładkiego strumieniowania adaptacyjnego
-\item Przedstawienie istniejących rozwiązań związanych ze strumieniowaniem adaptacyjnym (wtyczka do VLC, dodatek do Youtube, wtyczka do Internet Explorera)
-\end{itemize}
+\section{Wstęp}
+
+Poniższy rozdział zawiera opisy problemów związanych ze strumieniowaniem danych w sieciach komputerowych. Aplikacje przeznaczone do celów strumieniowania można zbudować na podstawie wielu protokołów i standardów. Rozdział skupia się na wadach istniejących rozwiązań w kontekście strumieniowania danych multimedialnych oraz danych interaktywnych.
+
+\section{Problem strumieniowania danych}
+
+Protokoły oparte o datagramy, takie jak User Datagram Protocol pozwalają na wysłanie strumienia danych jako serii pakietów. Takie rozwiązanie jest proste i wydajne, ale UDP nie daje żadnych gwarancji, że pakiety dotrą nienaruszone, w odpowiedniej kolejności i na czas do odbiorcy. Brak mechanizmów kontrolujących powyższe czynniki oznacza, że jakość strumienia może być słaba - dane przez niego przenoszone będą niepoprawne, spóźnione lub odbiorca nie otrzyma ich wcale. Część z tych problemów została rozwiązana w Datagram Congestion Control Protocol (zob. \ref{sec:DCCP}), który wprowadza kontrolę przeciążeń. Pozwala to na kompromis pomiędzy możliwością wykorzystania łącza (UDP wykorzystuje łącze w sposób bardziej agresywny niż TCP i DCCP), a adaptacją do zmieniającego się dostępnego pasma. UDP nie posiada mechanizmów adaptacji, TCP reaguje szybciej od DCCP na zmienność pasma. DCCP pozwala na kontrolowanie ilości utraconych pakietów w transmisji i jest TCP friendly, co oznacza, że może wykorzystać przepustowość nie większą niż dwukrotna przepustowość jaką wykorzystałoby TCP w tych samych warunkach. Protokoły datagramowe są dobrze przystosowane do transmisji interaktywnych w których utrata pojedynczych pakietów nie jest problematyczna, natomiast wymagane jest małe opóźnienie (np. gry komputerowe z trybem multiplayer).
+
+Niezawodne protokoły (np. Transmission Control Protocol) gwaratują poprawność i kolejność danych. Zwykle mechanizmy zapewniające powyższe funkcjonalności są oparte na licznikach czasu i retransmisjach, co może powodować spore opóźnienia w transmisji. Strumienie oparte na takich protokołach są wrażliwe na zmnieniającą się dostępną przepustowość sieci i ilość danych, które dostarczają do odbiorcy, może być zmienna w czasie. Dlatego aplikacje oparte na technologiach tego typu zwykle implementują bufory, które pozwalają na zmniejszenie wpływu zmienności strumienia na działanie programu.
+
+Jeżeli transmisja powinna zostać dostarczona do wielu odbiorców to wykorzystanie unicast'ów jest niewydajne. Pakiety przenoszące informacje muszą być powielane i adresowane do każdego z odbiorców osobno. W celu poprawy wykorzystania łącza możliwe jest skorzystanie z multicast'ów. Dzięki temu transmisja może dotrzeć do wielu odbiorców bez zbędnego przesyłania tych samych inforamcji wielokrotnie przez to samo łącze. Znaczącą wadą tego rozwiązania jest fakt, że Internet obecnie nie jest przystosowany do przesyłania multicast'ów na szeroką skalę. Implementacja multicast'ów zajmuje zasoby na urządzeniach sieciowych i potrzebuje protokołów routingu i kontrolowania położenia odbiorców w sieciach (np. PIM - Protocol Independent Multicast oraz IGMP - Internet Group Management Protocol). Kolejny problem w transmisji grupowej stanowi brak możliwości wyboru danych do strumieniowania po stronie klienta. Klient nie może ponownie odtworzyć fragmentu meczu, który dopiero obejrzał lub przewinąć części strumieniowanego filmu do przodu. Możliwe jest jednak udostępnienie klientowi tych funkcjonalności przy użyciu serwerów cache'ujących i odtwarzaczy buforujących otrzymywane dane.
+
+Innym podejściem do strumieniowania danych charakteryzują się protokoły typu P2P (Peer-to-peer). W rozwiązaniach opartych na tej technologi nie ma ``wąskich gardeł'' w postaci centralnych serwerów. Dane znajdujące się u jednego lub więcej użytkowników mogą być bezpośrednio przesłane do odbiorcy. Każdy odbiorca może strumieniować dane od wielu użytkowników, co pozwala na rozłożenie obciążenia sieci i stacji wysyłających. To podejście również ma swoje wady w szczególności dotyczące bezpieczeństwa i jakości danych które odbiorca otrzymuje. 
+
+\section{Podsumowanie}
+
+Każda z technologii ma zalety z których aplikacja może skorzystać oraz wady, które aplikacja powinna korygować lub zmniejszać ich wpływ na jakość strumieniowania. Bardzo istotny jest wybór odpowiedniej technologii na podstawie wymagań jakie powinna spełniać transmisjia.
