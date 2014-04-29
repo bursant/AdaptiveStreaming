@@ -18,4 +18,6 @@ class IAdaptation
 {
     public:
         virtual IBufferItem* getSegment(int sequenceNumber) = 0;
+		void virtual setDownloadTime(double time) = 0;
+		void virtual setBufferStatus(double status) = 0;
 };

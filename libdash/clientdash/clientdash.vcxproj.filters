@@ -10,6 +10,15 @@
     <Filter Include="Headers">
       <UniqueIdentifier>{80b189c7-b1cb-4b54-93e3-5915e8362fce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Adaptations">
+      <UniqueIdentifier>{d1de2eb9-d018-45ad-9ab1-e63ad7bd1c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Adaptations\Headers">
+      <UniqueIdentifier>{526edbe0-21f7-4b5a-8e23-792f7dea563c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Adaptations\Source">
+      <UniqueIdentifier>{761c40ba-67bf-4261-8f85-51b5b95890d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClientDASH.cpp">
@@ -33,11 +42,17 @@
     <ClCompile Include="Multithreading.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="RandomAdaptation.cpp">
-      <Filter>Source</Filter>
+    <ClCompile Include="ConstantAdaptation.cpp">
+      <Filter>Adaptations\Source</Filter>
     </ClCompile>
-    <ClCompile Include="LowestAdaptation.cpp">
-      <Filter>Source</Filter>
+    <ClCompile Include="PIDAdaptation.cpp">
+      <Filter>Adaptations\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomAdaptation.cpp">
+      <Filter>Adaptations\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SmoothAdaptation.cpp">
+      <Filter>Adaptations\Source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -77,11 +92,17 @@
     <ClInclude Include="Multithreading.h">
       <Filter>Interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="RandomAdaptation.h">
-      <Filter>Headers</Filter>
+    <ClInclude Include="ConstantAdaptation.h">
+      <Filter>Adaptations\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="LowestAdaptation.h">
-      <Filter>Headers</Filter>
+    <ClInclude Include="PIDAdaptation.h">
+      <Filter>Adaptations\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomAdaptation.h">
+      <Filter>Adaptations\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SmoothAdaptation.h">
+      <Filter>Adaptations\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

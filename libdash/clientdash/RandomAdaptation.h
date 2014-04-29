@@ -14,6 +14,8 @@ class RandomAdaptation : public IAdaptation
     public:
 		RandomAdaptation(IMPD* mpd);
         IBufferItem* getSegment(int sequenceNumber);
+		void setDownloadTime(double time);
+		void setBufferStatus(double status);
 
 	private:
         IMPD* mpd;

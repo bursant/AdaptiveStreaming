@@ -5,6 +5,10 @@
 #include "IAdaptation.h"
 #include "Multithreading.h"
 #include "BufferItem.h"
+#include "boost/date_time/posix_time/posix_time.hpp" 
+ 
+typedef boost::posix_time::ptime Time;
+typedef boost::posix_time::time_duration TimeDuration;
 
 using namespace dash;
 using namespace dash::mpd;

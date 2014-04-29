@@ -26,7 +26,15 @@ IBufferItem* RandomAdaptation::getSegment(int sequenceNumber)
     IBufferItem* item = new BufferItem(seg, this->representation);
 
 	boost::log::sources::severity_logger< severity_level > lg;
-	BOOST_LOG_SEV(lg, trace) << sequenceNumber << " " << this->representation->GetBandwidth();
+	BOOST_LOG_SEV(lg, trace) << sequenceNumber << ";" << this->representation->GetBandwidth();
 
     return item;
+}
+
+void RandomAdaptation::setDownloadTime(double time)
+{
+}
+
+void RandomAdaptation::setBufferStatus(double status)
+{
 }

@@ -11,18 +11,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LowestAdaptation.cpp" />
+    <ClCompile Include="ConstantAdaptation.cpp" />
     <ClCompile Include="Buffer.cpp" />
     <ClCompile Include="BufferItem.cpp" />
     <ClCompile Include="ClientDASH.cpp" />
     <ClCompile Include="Downloader.cpp" />
     <ClCompile Include="LibavDecoder.cpp" />
     <ClCompile Include="Multithreading.cpp" />
+    <ClCompile Include="PIDAdaptation.cpp" />
     <ClCompile Include="RandomAdaptation.cpp" />
     <ClCompile Include="SDLRenderer.cpp" />
+    <ClCompile Include="SmoothAdaptation.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LowestAdaptation.h" />
+    <ClInclude Include="ConstantAdaptation.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="BufferItem.h" />
     <ClInclude Include="Downloader.h" />
@@ -34,8 +36,10 @@
     <ClInclude Include="IVideoObserver.h" />
     <ClInclude Include="LibavDecoder.h" />
     <ClInclude Include="Multithreading.h" />
+    <ClInclude Include="PIDAdaptation.h" />
     <ClInclude Include="RandomAdaptation.h" />
     <ClInclude Include="SDLRenderer.h" />
+    <ClInclude Include="SmoothAdaptation.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E935DAA9-6D85-4417-BF18-F850DB3404BF}</ProjectGuid>

@@ -42,14 +42,19 @@ void* Downloader::bufferingProcedure(void *receiver)
 
     while(media != NULL)
     {
+		Time t1(boost::posix_time::microsec_clock::local_time());
         media->start();
         media->wait();
+		Time t2(boost::posix_time::microsec_clock::local_time());
+		TimeDuration dt = t2 - t1;
+
         downloader->buffer->push(media);
         number++;
 
-        media = downloader->adaptation->getSegment(number);
+		downloader->adaptation->setBufferStatus(downloader->buffer->size()*1.0);
+		downloader->adaptation->setDownloadTime(dt.total_milliseconds());
 
-        //std::cout << "Buffer size in segments: " << downloader->buffer->size() << std::endl;
+        media = downloader->adaptation->getSegment(number);
     }
 
     downloader->buffer->setEnd(true);

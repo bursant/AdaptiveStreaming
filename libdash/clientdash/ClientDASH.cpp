@@ -4,7 +4,9 @@
 #include "Downloader.h"
 #include "Buffer.h"
 #include "RandomAdaptation.h"
-#include "LowestAdaptation.h"
+#include "PIDAdaptation.h"
+#include "SmoothAdaptation.h"
+#include "ConstantAdaptation.h"
 #include "SDLRenderer.h"
 #include "LibavDecoder.h"
 #include <string>
@@ -43,7 +45,7 @@ void initLogging(string logpath)
 	logs::add_file_log
     (
         keywords::file_name = logpath,
-        keywords::format = "[%TimeStamp%]: %Message%",
+        keywords::format = "%TimeStamp%;%Message%",
 		keywords::auto_flush = true
     );
 }
@@ -54,6 +56,7 @@ int main(int argc, char** argv)
 	int bufferSize;
 	string logpath = "";
 	string adaptationFlag = "";
+	int repID;
 
 	po::options_description desc("Allowed options");
 	desc.add_options()
@@ -61,7 +64,8 @@ int main(int argc, char** argv)
 		("url,u", po::value<string>(&url), "specify mpd url")
 		("buffer,b", po::value<int>(&bufferSize)->default_value(30), "specify buffer size")
 		("log,l", po::value<string>(&logpath)->default_value("clientdash.log"), "specify log path")
-		("adaptation,a", po::value<string>(&adaptationFlag)->default_value("RandomAdaptation"), "specify adaptation algorithm")
+		("adaptation,a", po::value<string>(&adaptationFlag)->default_value("Constant"), "specify adaptation algorithm")
+		("repID,r", po::value<int>(&repID)->default_value(0), "specify representation for constant adaptation")
 	;
 
 	po::variables_map vm;
@@ -85,10 +89,14 @@ int main(int argc, char** argv)
 	IMPD* mpd = dashManager->Open(strdup(url.c_str()));
 
 	IAdaptation* adaptation;
-	if(adaptationFlag == "RandomAdaptation")
+	if(adaptationFlag == "Random")
 		adaptation= new RandomAdaptation(mpd);
-	else if(adaptationFlag == "LowestAdaptation")
-		adaptation= new LowestAdaptation(mpd);
+	else if(adaptationFlag == "Constant")
+		adaptation= new ConstantAdaptation(mpd, repID);
+	else if(adaptationFlag == "PID")
+		adaptation = new PIDAdaptation(mpd);
+	else if(adaptationFlag == "Smooth")
+		adaptation = new SmoothAdaptation(mpd);
 
 	IDownloader* downloader = new Downloader(buffer, mpd, dashManager, adaptation);
 
