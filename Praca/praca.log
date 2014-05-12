@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.19)  25 APR 2014 14:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.19)  12 MAY 2014 18:25
 entering extended mode
 **praca.tex
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\praca.tex
@@ -471,6 +471,7 @@ LaTeX Warning: Unused global option(s):
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial4.aux)
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial5.aux)
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial6.aux)
+(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial7.aux)
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\dodatekA.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -577,20 +578,20 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
 
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\praca.toc)
+(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\praca.toc [5
+
+])
 \tf@toc=\write3
- [5
-
-]
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial1.tex [6
-
-
-
-]
+ [6]
+(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial1.tex
 Rozdzia\l  1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
-) [7] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial2.tex
+) [7
+
+
+
+] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial2.tex
 [8
 
 
@@ -612,43 +613,73 @@ Package pdftex.def Info: TCP_DCCP.png used on input line 48.
 [13 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/TCP_DCCP.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
-<dash.png, id=56, 327.624pt x 188.8656pt>
+ [14])
+[15] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial4.tex [16
+
+
+
+]
+Rozdzia\l  4.
+<dash.png, id=62, 327.624pt x 188.8656pt>
 File: dash.png Graphic file (type png)
  <use dash.png>
-Package pdftex.def Info: dash.png used on input line 98.
+Package pdftex.def Info: dash.png used on input line 17.
 (pdftex.def)             Requested size: 327.62318pt x 188.86513pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17] <mpd.png, id=67, 441.90094pt x 231.86626pt>
+File: mpd.png Graphic file (type png)
+ <use mpd.png>
+Package pdftex.def Info: mpd.png used on input line 39.
+(pdftex.def)             Requested size: 455.24411pt x 238.87796pt.
+ [18 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/dash.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 46.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 46.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/dash.png>]) [16]
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial4.tex
-Rozdzia\l  4.
-) [17
+ [19 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/mpd.png>]
+<clientmodel.png, id=76, 472.01344pt x 118.19156pt>
+File: clientmodel.png Graphic file (type png)
+ <use clientmodel.png>
+Package pdftex.def Info: clientmodel.png used on input line 62.
+(pdftex.def)             Requested size: 455.24411pt x 113.99461pt.
 
+Underfull \vbox (badness 1997) has occurred while \output is active []
 
-
-] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial5.tex
-[18
+ [20 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/clientmodel.png>]) [21
+]
+(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial5.tex [22
 
 
 
 ]
 Rozdzia\l  5.
-<lan.png, id=71, 552.56438pt x 349.305pt>
-File: lan.png Graphic file (type png)
- <use lan.png>
-Package pdftex.def Info: lan.png used on input line 9.
-(pdftex.def)             Requested size: 386.79242pt x 244.51183pt.
-) [19 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/lan.png>]
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial6.tex [20
+) [23] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial6.tex
+[24
 
 
 
 ]
 Rozdzia\l  6.
-) [21] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\dodatekA.tex
-[22
+<lan.png, id=93, 552.56438pt x 349.305pt>
+File: lan.png Graphic file (type png)
+ <use lan.png>
+Package pdftex.def Info: lan.png used on input line 9.
+(pdftex.def)             Requested size: 386.79242pt x 244.51183pt.
+) [25 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/lan.png>]
+(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial7.tex [26
+
+
+
+]
+Rozdzia\l  7.
+) [27] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\dodatekA.tex
+[28
 
 
 
@@ -657,9 +688,9 @@ Dodatek A.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [23]) [24]
+) [29]) [30]
 No file praca.bbl.
-[25
+[31
 
 
 ] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\praca.aux
@@ -669,13 +700,14 @@ No file praca.bbl.
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial4.aux)
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial5.aux)
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial6.aux)
+(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial7.aux)
 (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\dodatekA.aux)) ) 
 Here is how much of TeX's memory you used:
- 4995 strings out of 493921
- 68640 string characters out of 3144870
+ 5032 strings out of 493921
+ 69403 string characters out of 3144870
  155870 words of memory out of 3000000
- 8135 multiletter control sequences out of 15000+200000
- 67735 words of font info for 66 fonts, out of 3000000 for 9000
+ 8157 multiletter control sequences out of 15000+200000
+ 76813 words of font info for 75 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,12n,45p,1447b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program
@@ -691,9 +723,9 @@ uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on praca.pdf (24 pages, 421096 bytes).
+Output written on praca.pdf (30 pages, 507051 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
