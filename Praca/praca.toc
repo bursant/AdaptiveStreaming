@@ -13,18 +13,21 @@
 \contentsline {chapter}{\numberline {4}Standard DASH-MPEG}{17}
 \contentsline {section}{\numberline {4.1}Wprowadzenie}{17}
 \contentsline {section}{\numberline {4.2}Zarys historyczny}{17}
-\contentsline {section}{\numberline {4.3}Systemy implementuj\IeC {\k a}ce DASH}{17}
-\contentsline {section}{\numberline {4.4}Hierarchiczna struktura modelu danych}{18}
-\contentsline {section}{\numberline {4.5}Osie czasu}{20}
-\contentsline {section}{\numberline {4.6}Model referencyjny klienta dla metryki DASH}{20}
-\contentsline {section}{\numberline {4.7}Profile}{21}
-\contentsline {section}{\numberline {4.8}Podsumowanie}{21}
-\contentsline {chapter}{\numberline {5}Opis projektu i implementacji}{23}
-\contentsline {section}{\numberline {5.1}Algorytm z artyku\IeC {\l }u}{23}
-\contentsline {section}{\numberline {5.2}W\IeC {\l }asny algorytm}{23}
-\contentsline {section}{\numberline {5.3}Implementacja}{23}
-\contentsline {section}{\numberline {5.4}Problemy i rozwi\IeC {\k a}zania}{23}
-\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testy}{25}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{27}
-\contentsline {chapter}{\numberline {A}Konfiguracja prze\IeC {\l }\IeC {\k a}cznicy}{29}
-\contentsline {chapter}{\hspace {13 pt} Bibliografia}{31}
+\contentsline {section}{\numberline {4.3}Systemy implementuj\IeC {\k a}ce DASH}{18}
+\contentsline {section}{\numberline {4.4}Hierarchiczna struktura modelu danych}{19}
+\contentsline {section}{\numberline {4.5}DASH timelines}{21}
+\contentsline {subsection}{\numberline {4.5.1}Media presentation timeline}{21}
+\contentsline {subsection}{\numberline {4.5.2}Segment availability timeline}{21}
+\contentsline {section}{\numberline {4.6}Model referencyjny klienta dla metryki DASH}{22}
+\contentsline {section}{\numberline {4.7}DASH profiles}{23}
+\contentsline {subsection}{\numberline {4.7.1}On Demand profile}{23}
+\contentsline {subsection}{\numberline {4.7.2}Live profile}{24}
+\contentsline {section}{\numberline {4.8}Podsumowanie}{24}
+\contentsline {chapter}{\numberline {5}Opis projektu i implementacji}{25}
+\contentsline {section}{\numberline {5.1}Opis algorytmu}{25}
+\contentsline {section}{\numberline {5.2}Implementacja}{25}
+\contentsline {section}{\numberline {5.3}Problemy i rozwi\IeC {\k a}zania}{25}
+\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testy}{27}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{29}
+\contentsline {chapter}{\numberline {A}Konfiguracja prze\IeC {\l }\IeC {\k a}cznicy}{31}
+\contentsline {chapter}{\hspace {13 pt} Bibliografia}{33}

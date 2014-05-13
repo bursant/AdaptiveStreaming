@@ -9,7 +9,7 @@ Ma bazowac na wyjasnieniu pojec w kontekscie strumieniowania:
 -niezawodnosc
 -RTT
 
-Wyjasnienie dlaczego warunki w siecisa zmienne.
+Wyjasnienie dlaczego warunki w sieci sa zmienne.
 (przepustowosc nominalna, stratnosc, retransmisja/brak,
 izochronicznosc audio, brak izochronicznosci video)
 

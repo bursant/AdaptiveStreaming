@@ -67,6 +67,7 @@ Rysunek~\ref{TCP_DCCP} przedstawia porównanie działania protokołów TCP i DCC
 Tabela z rysunku~\ref{TCP_DCCP_table} przedstawia porównanie średniej przepustowości~i odchylenia standardowego dla protokołów TCP i DCCP. Przeprowadzony test potwierdza zachowanie protokołu DCCP (CCID~3) opisane w RFC 5348~\cite{RFC5348}. 
 
 \section{Real-time Transport Protocol i RTP Control Protocol}
+\label{sec:rtp}
 
 RTP (Real-time Transport Protocol) pozwala na transport danych w systemach i aplikacjach czasu rzeczywistego wspierających interaktywne transmisje audio i video. Zwykle wykorzystuje UDP jako protokół transportowy, ale może działać nad innymi protokołami warstwy transportowej modelu ISO/OSI (DCCP, TCP - \cite{RFC3550, RFC5762}). Jeżeli sieć w której działa RTP wspiera multicasting to RTP pozwala na wysłanie danych do wielu odbiorców jednocześnie. RTP nie dostarcza mechanizmów QoS (Quality of Service), ani nie gwarantuje dostarczenia wysłanych danych na czas do odbiorcy.
 
