@@ -3,11 +3,20 @@
 
 \section{Wstęp}
 
-Istnieje wiele podejść do zagadnienia jakim jest strumieniowanie danych. Najbardziej popularnym spośród opisywanych poniżej jest para protokołów: Real-time Transport Protocol~i RTP Control Protocol~\cite{RFC3550}. W niniejszym rozdziale opisane zostaną również protokoły: Transmission Control Protocol~\cite{RFC793}, Datagram Congestion Control Protocol~\cite{RFC4340} oraz standard DASH-MPEG~\cite{ISO-IEC-DASH}. W każdym z powyższych przypadków zostną zaprezentowane metody pozwalające na adaptację tych protokołów/standardów do warunków panujących w sieci.
+Istnieje wiele protokołów dostarczających funkcjonalności strumieniowania danych. Najbardziej popularnym spośród opisywanych poniżej jest para protokołów: Real-time Transport Protocol~i RTP Control Protocol~\cite{RFC3550}. W niniejszym rozdziale opisane zostaną również protokoły: Transmission Control Protocol~\cite{RFC793}, Datagram Congestion Control Protocol~\cite{RFC4340} oraz RTSP~\cite{RFC2326}. W rozdziale zostną również zaprezentowane metody pozwalające na adaptację tych protokołów do warunków panujących w sieci.
 
 \section{Transmission Control Protocol}
 
-TCP jest protokołem o charakterze połączeniowym mającym sporo zastosowań. Należy do warstwy transportowej modelu ISO/OSI i jest wykorzystywany podczas wymiany poczty elektronicznej (SMTP, IMAP), przeglądania stron internetowych (HTTP, HTTPS), transferu plików (FTP) oraz pozwala na zdalny dostęp do zasobów (SSH)~\cite{Stevens}. Oferuje dostarczanie informacji w sposób niezawodny; sprawdza dane pod względem poprawności (sumy kontrolne) oraz kolejności (numery sekwencyjne)~\cite{RFC793}.
+TCP należy do warstwy transportowej modelu ISO/OSI i jest wykorzystywany podczas wymiany poczty elektronicznej (SMTP, IMAP), przeglądania stron internetowych (HTTP, HTTPS), transferu plików (FTP) oraz pozwala na zdalny dostęp do zasobów (SSH)~\cite{Stevens}. Oferuje dostarczanie informacji w sposób niezawodny; sprawdza dane pod względem poprawności (sumy kontrolne) oraz kolejności (numery sekwencyjne)~\cite{RFC793}.
+
+TCP jest protokołem o charakterze połączeniowym. Oznacza to, że przed transmisją danych następuje nawiązanie połączenia pomiędzy nadawcą i odbiorcą. Inicjalizacja połączenia nosi nazwę \textit{Three-way handshake} i jest przedstawiona na rysunku \ref{handshake}. W celu nawiązania połączenia klient wysyła segment TCP z ustawioną flagą SYN. W odpowiedzi serwer przesyła segment z ustawionymi flagami SYN i ACK. W celu potwierdzenia połączenia i zakończenia inicjalizacji klient przesyła segment z ustawioną flagą ACK. W trakcie wymiany tych segmentów ustalana jest początkowa wartość numeru sekwencyjnego pozwalającego na indeksowanie przesyłanych danych.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[width=0.9\linewidth]{handshake}
+	\caption{Procedura nawiązania połączenia protokołu TCP.}
+	\label{handshake}
+\end{figure}
 
 Protokół TCP jest ukierunkowany na niezawodne i bezbłędne dostarczanie danych, co w pewnych przypadkach może powodować opóźnienia. Z tego powodu UDP (w połączeniu z RTP) jest uważane za lepszy wybór przy strumieniowaniu interaktywnych danych multimedialnych. 
 
@@ -41,7 +50,6 @@ Pozostałe numery CCID (0-1 oraz 4-255) pozostają do tej pory niewykorzystane.
 Mechanizm TCP-like Congestion Control korzysta z AIMD (Additive Increase/Multiplicative Decrease). Jeżeli TCP wykorzystuje AIMD to po otrzymaniu każdej poprawnej wiadomości ACK od odbiorcy, nadawca powiększa wielkość \textit{cwnd} (wielkość okna) o $\frac{1}{cwnd}$. W razie utraty pakietów okno jest pomniejszane dwukrotnie~\cite{Stevens}. Omawiany mechanizm zachowuje także liczniki czasu znane z TCP oraz algorytm Slow Start~\cite{RFC2581}. TCP-like Congestion Control powinno być wykorzystywane przez aplikacje w których bardziej preferowane jest maksymalne wykorzystanie łącza od utrzymania stabilnego pasma (np. transfer plików)~\cite{RFC4341}.
 
 TCP-Friendly Rate Control jest mechanizmem uznawanym za niezachłanny przy dzieleniu łącza z~innymi strumieniami o charakterze TCP. Niezachłanność tego mechanizmu oznacza, że wykorzystuje on przepustowość nie większą niż dwukrotna wartość przepustowości, która zostałaby wykorzystana przez TCP w tych samych warunkach. TCP-Friendly Rate Control charakteryzuje się także dużo mniejszą zmiennością wartości przepustowości w czasie w porównaniu do TCP, co sprzyja zastosowaniu DCCP z CCID 3 w strumieniowaniu danych multimedialnych. `Wygładzenie' przepustowości transmisji jest okupione wolniejszą niż w TCP szybkością przystosowywania się strumienia do zmian w dostępnym paśmie~\cite{RFC5348}.
-
 
 \begin{figure}[h!]
 	\centering
@@ -78,9 +86,9 @@ Protokół RTCP (Real-time Control Protocol) stanowi protokół kontrolny dla RT
 	\begin{tabular}{ l | c | r }
   		Nazwa & Typ & Zalecane pasmo \\
   		\hline
-  		GSM & audio & 13 Kb/s \\
-  		G728 & audio & 16 Kb/s  \\
-  		G729 & audio & 8 Kb/s  \\
+  		GSM & audio & 13 kb/s \\
+  		G728 & audio & 16 kb/s  \\
+  		G729 & audio & 8 kb/s  \\
 	\end{tabular}
 	\caption{Przykładowe typy pakietów RTP.}
 	\label{RTP_table}
@@ -88,13 +96,44 @@ Protokół RTCP (Real-time Control Protocol) stanowi protokół kontrolny dla RT
 
 RTP przenosi dane, które zwykle wymagają ustalonej przepustowości. Dzięki temu prawdopodobieństwo, że strumień RTP będzie systematycznie zajmował coraz większe pasmo jest niewielkie. Z drugiej strony, strumień nie może też zostać ograniczony bez uszczerbku na jakości transmisji danych, szczególnie jeżeli transmisja ma charakter interaktywny. Pasmo potrzebne do sprawnej transmisji zależy od rodzaju przesyłanych danych. Rodzaj przesyłanych danych można identyfikować na podstawie pola Payload Type (zob. rysunek~\ref{RTP_table}) w nagłówku pakietu RTP. Z każdym typem związany jest profil RTP opisujący parametry transmisji (w tym wymaganą przepustowość)~\cite{RFC3551}. Protokół RTP nie posiada odpowiednich mechanizmów kontroli przeciążeń, dlatego powinien korzystać z mechanizmów dostępnych w protokołach niższych warstw (np. DCCP CCID 3).
 
+\section{Real Time Streaming Protocol}
+
+Protokół RTSP jest stanowy i należy do warstwy aplikacji modelu ISO/OSI. Dostarcza funkcjonalności pozwalającej na kontrolowanie sesji multimedialnych\footnote{sesja multimedialna może składać się z jednego lub kilku strumieni danych} pomiędzy serwerem a klientem. Sam protokół nie służy do przesyłania danych, a jedynie do przekazywania komend pozwalających na zmianę stanu sesji konkretnego klienta na serwerze. Jako kanał do przekazania danych za pomocą strumieniowania można wykorzystać wspomnianą parę protokołów RTP i RTCP. 
+
+Klient może przekazywać swoje żądania do serwera za pośrednictwem komend w formie teksowej, opisanych w RFC 2326 \cite{RFC2326}. Komendy, które implementują serwery RTSP można podzielić na wymagane i opcjonalne. Do wymaganych należą:
+\begin{itemize}
+\item OPTIONS - żądanie określenia zbioru implementowanych komend przez serwer,
+\item SETUP - żądanie opisu w jaki sposób będzie przebiegał transport danych (unicast/multicast, porty, protokoły),
+\item PLAY - żądanie rozpoczęcia transmisji danych,
+\item TEARDOWN - żądanie zakończenia sesji,
+\end{itemize}
+Komendy opcjonalne nie są wymagane w implementacji w pełni funkcjonalnego serwera i należą do nich:
+\begin{itemize}
+\item DESCRIBE- żądanie opisu pliku znajdującego się na serwerze (często w formie SDP\footnote{Session Description Protocol - tekstowy format opisu zasobów.})
+\item ANNOUNCE - może zostać przesłane od klienta do serwera jak i od serwera do klienta. W pierwszym przypadku zawiera opis danych znajdujących się pod określonym URL. W drugim przypadku pozwala na aktualizację opisu sesji w czasie rzeczywistym (przydatne w razie dodania/usunięcia strumienia danych w ramach sesji),
+\item PAUSE - żądanie zatrzymania jednego lub kilku strumieni danych,
+\item RECORD - żądanie zapisu danych przesyłanych w ramach sesji (przydatne do tworzenia nagrań z videokonferencji),
+\item REDIRECT - komenda przesyłana od serwera do klienta z informacją na temat lokalizacji poszukiwanego zasobu pod innym adresem,
+\item SET\_PARAMETER i GET\_PARAMETER - para komend wykorzystywana do otrzymywania i ustawiania parametrów sesji.
+\end{itemize}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics{rtsp}
+	\caption{Przykładowa sesja RTSP, źródło: \cite{rtsp-example}}
+	\label{fig:rtsp}
+\end{figure}
+
+Rysunek \ref{fig:rtsp} pokazuje przebieg przykładowej sesji RTSP. Klient przesyła żądanie opisu zasobu znajdującego się na serwerze używając komendy DESCRIBE, a następnie używając SETUP ustala sposób transmisji danych. Po wymianie tych informacji, klient jest gotowy do przyjęcia strumienia i zawiadamia o tym serwer komendą PLAY. Po otrzymaniu tej komendy serwer rozpoczyna strumieniowanie danych. W trakcie strumieniowania, klient może wysłać komendę PAUSE wstrzymującą przepływ danych. W celu zakończenia połączenia wysyłana jest komenda TEARDOWN.
+
 \section{Podsumowanie}
 
-W powyższym rozdziale opisano kilka podejść do problemu strumieniowania danych multimedialnych. Opisane zostały protokoły TCP, DCCP, RTP/RTCP oraz standard DASH-MPEG. Szczególną uwagę poświęcono mechanizmom adaptacji do zmniennej przepustowości sieci i cechom jakie powinny posiadać protokoły przeznaczone do strumieniowania danych. Do cech tych należą:
+W powyższym rozdziale opisano kilka podejść do problemu strumieniowania danych multimedialnych. Opisane zostały protokoły TCP, DCCP, RTP/RTCP oraz RTSP. Szczególną uwagę poświęcono mechanizmom adaptacji do zmniennej przepustowości sieci i cechom jakie powinny posiadać protokoły przeznaczone do strumieniowania danych. Do cech tych należą:
 \begin{itemize}
-\item kontrola przeciążeń i przepływu (TCP)
-\item jednostajne wykorzystanie łącza (DCCP CCID3)
-\item kanał zwrotny przenoszący informacje na temat sesji (RTCP)
-\item możliwość dostosowana parametrów transmisji do warunków w sieci (DASH, TCP)
+\item kontrola przeciążeń (TCP, DCCP) oraz przepływu (TCP),
+\item jednostajne wykorzystanie łącza (DCCP CCID3),
+\item kanał zwrotny przenoszący informacje na temat sesji (RTCP, RTSP),
+\item możliwość dostosowana parametrów transmisji do warunków w sieci (TCP),
+\item funkcjonalność pozwalająca na sterowanie strumieniem danych (RTSP).
 \end{itemize}
 

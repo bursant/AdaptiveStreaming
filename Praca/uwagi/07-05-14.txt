@@ -1,5 +1,4 @@
 2.
-
 Tytul: Problematyka strumieniowania danych 
 
 Ma bazowac na wyjasnieniu pojec w kontekscie strumieniowania:
@@ -7,7 +6,11 @@ Ma bazowac na wyjasnieniu pojec w kontekscie strumieniowania:
 -kontrola przeplywu
 -zawodnosc
 -niezawodnosc
+-opóŸnienie
+-jitter
+-utrata pakietów
 -RTT
+-mos
 
 Wyjasnienie dlaczego warunki w sieci sa zmienne.
 (przepustowosc nominalna, stratnosc, retransmisja/brak,
@@ -17,13 +20,14 @@ liczba odbiorcow i mozliwosci punkt - multipunkt
 
 nie u¿ywaæ konkretnych konkretnych protoko³ów, ale mozna podac jako przyk³ady
 
-wyznaczyc zakres sieci -> heterogenicznosc, rozleglosc (Internet)
+konkluzja -> adaptacja jest potrzebna
 
-konkluzja -> adaptacja jest potrzebna (konkretnego rozwiazania technologicznego)
+Podrozdzial o organizacji sieci (Drop/RED, polityki itd...)
+
+Wykres obrazuj¹cy: audio - stale pasmo, video - zmienne pasmo.
 
 
 3. 
-
 TCP/UDP nie nadaja sie do multicastow.
 Opisanie jak jitter, mos, ber, kody naprawcze wplywaja na transmisje.
 Rozdzial ma pokazac co dash moze naprawic.
@@ -31,9 +35,4 @@ Rozdzial ma pokazac co dash moze naprawic.
 Podrozdzial na temat multicastu -> skupic sie na najlepszym 
 dostarczaniu do odbiorcow (organizacja drzewa, zalewanie(krotko))
 
-Podrozdzial o organizacji sieci (Drop/RED, polityki itd...)
-
-Wykres obrazuj¹cy: audio - stale pasmo, video - zmienne pasmo.
-
-Przeniesienie podrozdzialu DASH do nowego rozdzialu opisujacego technologie. W konkluzji zawrzec 
-niedomagania i aspekty nad ktorymi warto sie skupic.
+Przeniesienie podrozdzialu DASH do nowego rozdzialu opisujacego technologie. W konkluzji zawrzec niedomagania i aspekty nad ktorymi warto sie skupic.

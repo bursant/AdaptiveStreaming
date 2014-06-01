@@ -1,0 +1,37 @@
+Brak wstepow w spisie tresci.
+
+2. tytu³: Problematyka strumieniowania danych w pakietowych sieciach komputerowych
+
+wymogi odnosnie strumieniowania danych, kodeki i ich wymogi, komunikacja interaktywna/nieinteraktywna
+nadawca dowiaduje sie dziêki sprzê¿eniu zwrotnemu
+oznaczanie wa¿nejszych danych w strumieniu
+skupic sie bardziej na strumieniowaniu i ogólnie o adaptacyjnoœci
+sprzecznosc minimalizacji opoznienia i niezawodnosci -> wynikaja stad rozne scenariusze
+opoznienie nie powoduje zaklocen
+rozwiniecie mysli wirespeed i ASIC bo jest tak rzucona
+inne sformulowanie podatnosci aplikacji glosowych na jitter
+inne sformulowanie szybkosci transmisji
+przy wykresie audio video nalezy nie dawac kategorycznych stwierdzen
+multicast nie jest technologi¹ -> zmienic
+rozwazamy funkcjonalnoœæ dostarczania danych do poziomu warstwy sieciowej
+wyrzucic TCP
+wyjasnienie DiffServ i IntServ
+vlan zapewniajace izolacje
+RED albo do warstwy sieciowej albo 
+Co rozumiemy przez jakoœæ strumienia i jak ja oceniac (mos)
+
+nie podsumowujemy tego czego nie bylo. Wiecej o strumieniowaniu adaptacyjnym 
+
+3.
+funkcjonalnosc od warstwy transportowej w góre
+na ile protokoly roznych warstw pozwalaja na adaptacje !!!! skupic sie na tym!!!
+inaczej o TCP, jakie ma cechy i co z tego wynika (jakie zastosowania)
+DCCP analiza w kontekscie adaptacyjnoœci.
+RTSP usunac
+
+4.
+brak przedstawienia potrzeby takiego rozwiazania
+poprzednie rozdzialy nie pokazuja ze wsyzstkie problemy sa rozwiazane -> rzecz klienta czego sobie zarzada a nie serwera. Moze byc glupi http a nie specjalny rtp
+strategia strumieniowania a nie logika
+definicja transmisji na zywo
+zbyt ogolne podsumowanie odnosnie algorytmu, zajawka do transmisji grupowej dash
