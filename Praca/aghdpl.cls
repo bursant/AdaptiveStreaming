@@ -122,7 +122,7 @@ Supervisor: & {\itshape \@supervisor}\\
 
 {~~}\vspace{20mm}
 
-{\large\itshape O\'swiadczam, \'swiadomy(-a) odpowiedzialno\'sci karnej za po\'swiadczenie nieprawdy, \.ze \mbox{niniejsz\k{a}} prac\k{e} dyplomow\k{a} wykona\l{}em(-am) osobi\'scie i samodzielnie i nie korzysta\l{}em(-am) ze \'zr\'ode\l{} innych ni\.z wymienione w pracy.}
+{\large\itshape O\'swiadczam, \'swiadomy odpowiedzialno\'sci karnej za po\'swiadczenie nieprawdy, \.ze \mbox{niniejsz\k{a}} prac\k{e} dyplomow\k{a} wykona\l{}em osobi\'scie i samodzielnie i nie korzysta\l{}em ze \'zr\'ode\l{} innych ni\.z wymienione w pracy.}
 
 
 \clearpage \titlepage

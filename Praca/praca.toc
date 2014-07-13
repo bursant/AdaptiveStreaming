@@ -28,10 +28,15 @@
 \contentsline {subsection}{\numberline {4.7.2}Live profile}{34}
 \contentsline {section}{\numberline {4.8}Podsumowanie}{34}
 \contentsline {chapter}{\numberline {5}Opis projektu i implementacji}{35}
-\contentsline {section}{\numberline {5.1}Opis algorytmu}{35}
-\contentsline {section}{\numberline {5.2}Implementacja}{35}
-\contentsline {section}{\numberline {5.3}Problemy i rozwi\IeC {\k a}zania}{35}
-\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testy}{37}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{39}
-\contentsline {chapter}{\numberline {A}Konfiguracja prze\IeC {\l }\IeC {\k a}cznicy}{41}
-\contentsline {chapter}{\hspace {13 pt} Bibliografia}{43}
+\contentsline {section}{\numberline {5.1}Wprowadzenie}{35}
+\contentsline {section}{\numberline {5.2}Opis algorytmu}{35}
+\contentsline {subsection}{\numberline {5.2.1}Modu\IeC {\l } kontrolny}{36}
+\contentsline {subsection}{\numberline {5.2.2}Przewidywanie przepustowo\IeC {\'s}ci TCP}{37}
+\contentsline {subsection}{\numberline {5.2.3}Logika prze\IeC {\l }\IeC {\k a}czania reprezentacji}{37}
+\contentsline {section}{\numberline {5.3}Wysokopoziomowa koncepcja rozwi\IeC {\k a}zania}{38}
+\contentsline {section}{\numberline {5.4}Szczeg\IeC {\'o}\IeC {\l }owy opis implementacji}{39}
+\contentsline {section}{\numberline {5.5}Wykorzystane narz\IeC {\k e}dzia i biblioteki}{39}
+\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testy}{41}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{43}
+\contentsline {chapter}{\numberline {A}Konfiguracja prze\IeC {\l }\IeC {\k a}cznicy}{45}
+\contentsline {chapter}{\hspace {13 pt} Bibliografia}{47}

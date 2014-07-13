@@ -1,24 +1,16 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.19)  19 MAY 2014 18:55
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.7.1)  13 JUL 2014 15:38
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **praca.tex
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\praca.tex
+(./praca.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\aghdpl.cls
-*** [aghdpl.cls] --- (MSz, GJN) v2.0 <19.11.2013> ***
+Babel <3.9h> and hyphenation patterns for 3 languages loaded.
+(./aghdpl.cls *** [aghdpl.cls] --- (MSz, GJN) v2.0 <19.11.2013> ***
 Document Class: aghdpl 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -34,41 +26,41 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -76,18 +68,18 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -102,17 +94,16 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks15
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -123,11 +114,11 @@ Package color Info: Driver file: pdftex.def on input line 130.
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip52
@@ -139,7 +130,7 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen116
 \titlewidthfirst=\dimen117
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 44.
 \cftparskip=\skip54
@@ -179,23 +170,17 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cfttabindent=\skip86
 \cfttabnumwidth=\skip87
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\block.tss"
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/block.tss
 File: block.tss 2011/12/15
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\polish.ldf"
+(/usr/share/texlive/texmf-dist/tex/generic/babel-polish/polish.ldf
 Language: polish 2005/03/31 v1.2l Polish support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
 \babel@savecnt=\count94
 \U@D=\dimen118
 )
@@ -205,19 +190,19 @@ Package babel Info: Making " an active character on input line 83.
 \pl@right=\dimen121
 \pl@temp=\dimen122
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -367,7 +352,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -398,7 +383,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -422,92 +407,173 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\comment\comment.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
-Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks19
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count95
-\lst@gtempboxa=\box27
-\lst@token=\toks20
-\lst@length=\count96
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count95
+\c@ALG@rem=\count96
+\c@ALG@nested=\count97
+\ALG@tlm=\skip88
+\ALG@thistlm=\skip89
+\c@ALG@Lnr=\count98
+\c@ALG@blocknr=\count99
+\c@ALG@storecount=\count100
+\c@ALG@tmpcounter=\count101
+\ALG@tmplength=\skip90
+) (./algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+ (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count102
+\float@exts=\toks19
+\float@box=\box27
+\@float@everytoks=\toks20
+\@floatcapt=\box28
+)
+\@float@every@algorithm=\toks21
+\c@algorithm=\count103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count104
+\rotFPtop=\skip91
+\rotFPbot=\skip92
+\rot@float@box=\box29
+\rot@mess@toks=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count105
+\lst@gtempboxa=\box30
+\lst@token=\toks24
+\lst@length=\count106
 \lst@currlwidth=\dimen123
-\lst@column=\count97
-\lst@pos=\count98
+\lst@column=\count107
+\lst@pos=\count108
 \lst@lostspace=\dimen124
 \lst@width=\dimen125
-\lst@newlines=\count99
-\lst@lineno=\count100
+\lst@newlines=\count109
+\lst@lineno=\count110
 \lst@maxwidth=\dimen126
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-\c@lstnumber=\count101
-\lst@skipnumbers=\count102
-\lst@framebox=\box28
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count111
+\lst@skipnumbers=\count112
+\lst@framebox=\box31
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
-File: listings.cfg 2014/03/04 1.5c listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
-Package: listings 2014/03/04 1.5c (Carsten Heinz)
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/03/04 1.5c listings language file
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
-File: lstlang2.sty 2014/03/04 1.5c listings language file
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2013/08/26 1.5b listings language file
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
-File: lstlang3.sty 2014/03/04 1.5c listings language file
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2013/08/26 1.5b listings language file
 )
 
 LaTeX Warning: Unused global option(s):
     [11pt].
 
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\praca.aux
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial1.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial2.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial3.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial4.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial5.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial6.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial7.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\dodatekA.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 64.
+(./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
+(./rozdzial4.aux) (./rozdzial5.aux) (./rozdzial6.aux) (./rozdzial7.aux)
+(./dodatekA.aux))
+\openout1 = `praca.aux'.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 68.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
+\scratchcounter=\count113
 \scratchdimen=\dimen127
-\scratchbox=\box29
-\nofMPsegments=\count104
-\nofMParguments=\count105
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count106
+\scratchbox=\box32
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count116
 \MPscratchDim=\dimen128
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks22
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -542,52 +608,56 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count109
+\c@lstlisting=\count119
 <agh.jpg, id=1, 146.4672pt x 284.7438pt>
 File: agh.jpg Graphic file (type jpg)
  <use agh.jpg>
-Package pdftex.def Info: agh.jpg used on input line 66.
+Package pdftex.def Info: agh.jpg used on input line 70.
 (pdftex.def)             Requested size: 87.88098pt x 170.8476pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 66.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 70.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <12> not available
-(Font)              Font shape `T1/phv/b/sc' tried instead on input line 66.
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 70.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 66.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 66.
+(Font)              <10.95> on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 66.
+(Font)              <8> on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 66.
+(Font)              <6> on input line 70.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 66.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 70.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <G:/Studies/Magisterka/Rep
-o/AdaptiveStreaming/Praca/agh.jpg>] [1
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./agh.jpg>]
+ [1
 
 ] [1
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 72.
 
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\praca.toc [5
+(./praca.toc [5
 
 ])
 \tf@toc=\write4
+\openout4 = `praca.toc'.
+
  [6]
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial1.tex
+\openout2 = `rozdzial1.aux'.
+
+ (./rozdzial1.tex
 Rozdzia\l  1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
@@ -595,8 +665,10 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 
 
 
-] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial2.tex
-[8
+]
+\openout2 = `rozdzial2.aux'.
+
+ (./rozdzial2.tex [8
 
 
 
@@ -606,7 +678,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 12.
-<jitter.jpg, id=32, 1027.84pt x 459.7175pt>
+<jitter.jpg, id=33, 1027.84pt x 459.7175pt>
 File: jitter.jpg Graphic file (type jpg)
  <use jitter.jpg>
 Package pdftex.def Info: jitter.jpg used on input line 16.
@@ -615,7 +687,7 @@ Package pdftex.def Info: jitter.jpg used on input line 16.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9] <drop.png, id=36, 544.28343pt x 215.30438pt>
+[9] <drop.png, id=37, 544.28343pt x 215.30438pt>
 File: drop.png Graphic file (type png)
  <use drop.png>
 Package pdftex.def Info: drop.png used on input line 26.
@@ -627,8 +699,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 2894) has occurred while \output is active []
 
- [10 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/jitter.jpg>]
-<audiovideobitrate.png, id=40, 652.68843pt x 301.8778pt>
+ [10 <./jitter.jpg>] <audiovideobitrate.png, id=41, 652.68843pt x 301.8778pt>
 File: audiovideobitrate.png Graphic file (type png)
 
 <use audiovideobitrate.png>
@@ -638,47 +709,49 @@ Package pdftex.def Info: audiovideobitrate.png used on input line 40.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/drop.png>]
+[11 <./drop.png>]
 Underfull \vbox (badness 4060) has occurred while \output is active []
 
- [12 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/audiovideobitrate.png>
-]
-<qosmodel.jpg, id=47, 371.13657pt x 261.22594pt>
+ [12 <./audiovideobitrate.png>] <qosmodel.jpg, id=48, 371.13657pt x 261.22594pt
+>
 File: qosmodel.jpg Graphic file (type jpg)
- <use qosmodel.jpg>
+
+<use qosmodel.jpg>
 Package pdftex.def Info: qosmodel.jpg used on input line 65.
 (pdftex.def)             Requested size: 318.66948pt x 224.30313pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13] <tcpsynchro.jpg, id=51, 580.1675pt x 365.365pt>
+[13] <tcpsynchro.jpg, id=52, 580.1675pt x 365.365pt>
 File: tcpsynchro.jpg Graphic file (type jpg)
  <use tcpsynchro.jpg>
 Package pdftex.def Info: tcpsynchro.jpg used on input line 74.
 (pdftex.def)             Requested size: 318.66948pt x 200.68376pt.
 
-[14 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/qosmodel.jpg> <G:/Studi
-es/Magisterka/Repo/AdaptiveStreaming/Praca/tcpsynchro.jpg>]
-<red.jpg, id=56, 421.575pt x 292.84406pt>
+[14 <./qosmodel.jpg> <./tcpsynchro.jpg>]
+<red.jpg, id=57, 421.575pt x 292.84406pt>
 File: red.jpg Graphic file (type jpg)
  <use red.jpg>
 Package pdftex.def Info: red.jpg used on input line 85.
 (pdftex.def)             Requested size: 364.19667pt x 252.98936pt.
- [15 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/red.jpg>]
-<pim.jpg, id=60, 790.45313pt x 497.60907pt>
+ [15 <./red.jpg>]
+<pim.jpg, id=61, 790.45313pt x 497.60907pt>
 File: pim.jpg Graphic file (type jpg)
  <use pim.jpg>
 Package pdftex.def Info: pim.jpg used on input line 105.
 (pdftex.def)             Requested size: 455.24411pt x 286.58615pt.
- [16 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/pim.jpg>]) [17]
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial3.tex [18
+ [16 <./pim.jpg>])
+[17]
+\openout2 = `rozdzial3.aux'.
+
+ (./rozdzial3.tex [18
 
 
 
 ]
 Rozdzia\l  3.
-<handshake.png, id=70, 748.396pt x 354.926pt>
+<handshake.png, id=71, 748.396pt x 354.926pt>
 File: handshake.png Graphic file (type png)
  <use handshake.png>
 Package pdftex.def Info: handshake.png used on input line 16.
@@ -687,138 +760,166 @@ Package pdftex.def Info: handshake.png used on input line 16.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] [20 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/handshake.png>]
-<TCP_DCCP.png, id=82, 416.30531pt x 289.83281pt>
+[19] [20 <./handshake.png>] <TCP_DCCP.png, id=83, 416.30531pt x 289.83281pt>
 File: TCP_DCCP.png Graphic file (type png)
- <use TCP_DCCP.png>
+
+<use TCP_DCCP.png>
 Package pdftex.def Info: TCP_DCCP.png used on input line 56.
 (pdftex.def)             Requested size: 416.30429pt x 289.83209pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21] [22 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/TCP_DCCP.png>]
-[23] <rtsp.jpg, id=94, 240.14719pt x 211.54031pt>
+[21] [22 <./TCP_DCCP.png>] [23] <rtsp.jpg, id=95, 240.14719pt x 211.54031pt>
 File: rtsp.jpg Graphic file (type jpg)
- <use rtsp.jpg>
+
+<use rtsp.jpg>
 Package pdftex.def Info: rtsp.jpg used on input line 122.
 (pdftex.def)             Requested size: 240.14658pt x 211.53978pt.
- [24 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/rtsp.jpg>]) [25]
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial4.tex [26
+ [24 <./rtsp.jpg>]) [25]
+\openout2 = `rozdzial4.aux'.
+
+ (./rozdzial4.tex [26
 
 
 
 ]
 Rozdzia\l  4.
-[27] <dash.png, id=108, 327.624pt x 188.8656pt>
+[27] <dash.png, id=109, 327.624pt x 188.8656pt>
 File: dash.png Graphic file (type png)
  <use dash.png>
 Package pdftex.def Info: dash.png used on input line 25.
 (pdftex.def)             Requested size: 327.62318pt x 188.86513pt.
- [28 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/dash.png>]
-<segmentalignment.png, id=113, 903.375pt x 452.69125pt>
+ [28 <./dash.png>] <segmentalignment.png, id=114, 903.375pt x 452.69125pt>
 File: segmentalignment.png Graphic file (type png)
 
 <use segmentalignment.png>
 Package pdftex.def Info: segmentalignment.png used on input line 38.
 (pdftex.def)             Requested size: 455.24411pt x 228.13411pt.
- [29 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/segmentalignment.png>]
- <mpd.png, id=118, 441.90094pt x 231.86626pt>
+ [29 <./segmentalignment.png>]
+<mpd.png, id=119, 441.90094pt x 231.86626pt>
 File: mpd.png Graphic file (type png)
-
-<use mpd.png>
+ <use mpd.png>
 Package pdftex.def Info: mpd.png used on input line 63.
 (pdftex.def)             Requested size: 455.24411pt x 238.87796pt.
- [30 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/mpd.png>]
+ [30 <./mpd.png>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 78.
-[31] <clientmodel.png, id=126, 472.01344pt x 118.19156pt>
+
+[31] <clientmodel.png, id=127, 472.01344pt x 118.19156pt>
 File: clientmodel.png Graphic file (type png)
 
 <use clientmodel.png>
 Package pdftex.def Info: clientmodel.png used on input line 93.
 (pdftex.def)             Requested size: 455.24411pt x 113.99461pt.
- [32 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/clientmodel.png>] [33]
-) [34]
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial5.tex
+ [32 <./clientmodel.png>] [33]) [34]
+\openout2 = `rozdzial5.aux'.
+
+ (./rozdzial5.tex
 Rozdzia\l  5.
-) [35
+<PID.png, id=138, 790.45313pt x 355.3275pt>
+File: PID.png Graphic file (type png)
+ <use PID.png>
+Package pdftex.def Info: PID.png used on input line 22.
+(pdftex.def)             Requested size: 455.24411pt x 204.64244pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35
 
 
 
-] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial6.tex
-[36
+] [36 <./PID.png>] [37]
+<ImplementationConceptual.png, id=151, 561.59813pt x 362.10281pt>
+File: ImplementationConceptual.png Graphic file (type png)
 
+<use ImplementationConceptual.png>
+Package pdftex.def Info: ImplementationConceptual.png used on input line 99.
+(pdftex.def)             Requested size: 455.24411pt x 293.5282pt.
+ [38 <./ImplementationConceptual.png>]
+<Class.png, id=156, 788.19469pt x 434.37282pt>
+File: Class.png Graphic file (type png)
+ <use Class.png>
+Package pdftex.def Info: Class.png used on input line 122.
+(pdftex.def)             Requested size: 630.55661pt x 347.49872pt.
+) [39] [40 <./Class.png>]
+\openout2 = `rozdzial6.aux'.
 
-
-]
+ (./rozdzial6.tex
 Rozdzia\l  6.
-<lan.png, id=143, 552.56438pt x 349.305pt>
+<lan.png, id=163, 552.56438pt x 349.305pt>
 File: lan.png Graphic file (type png)
  <use lan.png>
 Package pdftex.def Info: lan.png used on input line 9.
 (pdftex.def)             Requested size: 386.79242pt x 244.51183pt.
-) [37 <G:/Studies/Magisterka/Repo/AdaptiveStreaming/Praca/lan.png>]
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial7.tex [38
+) [41
+
+
+
+ <./lan.png>]
+\openout2 = `rozdzial7.aux'.
+
+
+(./rozdzial7.tex [42
 
 
 
 ]
 Rozdzia\l  7.
-) [39] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\dodatekA.tex
-[40
+) [43]
+\openout2 = `dodatekA.aux'.
+
+ (./dodatekA.tex [44
 
 
 
 ]
 Dodatek A.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [41]) [42]
+) [45]) [46]
 No file praca.bbl.
-[43
+[47
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 [] \T1/ptm/m/n/10.95 http://www.cisco.com/c/en/us/support/docs/collaboration-en
 dpoints/spa901-1-line-ip-
  []
 
-[44] (G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\praca.aux
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial1.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial2.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial3.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial4.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial5.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial6.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\rozdzial7.aux)
-(G:\Studies\Magisterka\Repo\AdaptiveStreaming\Praca\dodatekA.aux)) ) 
+[48] (./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
+(./rozdzial4.aux) (./rozdzial5.aux) (./rozdzial6.aux) (./rozdzial7.aux)
+(./dodatekA.aux)) ) 
 Here is how much of TeX's memory you used:
- 5148 strings out of 493921
- 71212 string characters out of 3144870
- 157749 words of memory out of 3000000
- 8257 multiletter control sequences out of 15000+200000
- 82464 words of font info for 79 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 34i,12n,45p,2610b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program
- Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/h
-elvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/
-uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on praca.pdf (43 pages, 909636 bytes).
+ 6273 strings out of 494999
+ 85159 string characters out of 6180802
+ 170717 words of memory out of 5000000
+ 9252 multiletter control sequences out of 15000+600000
+ 82464 words of font info for 79 fonts, out of 8000000 for 9000
+ 34 hyphenation exceptions out of 8191
+ 38i,12n,45p,2610b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/co
+urier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on praca.pdf (47 pages, 988180 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
