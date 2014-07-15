@@ -1,0 +1,19 @@
+\chapter{Przykład kompilacji źródeł odtwarzacza}
+\label{cha:dodatekB}
+
+Na listingu \ref{lst:cmd} przedstawiono komendę z której korzysta program Microsoft Visual Studio 2010 Professional w celu kompilacji źródeł odtwarzacza multimedialnego.
+
+\begin{lstlisting}[caption=Kompilacja źródeł odtwarzacza przez program MVS 2010., label=lst:cmd]
+...> cmake /I"C:\boost_1_55_0" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL
+/D "WIN32" 
+/D "NDEBUG" 
+/D "_CONSOLE" 
+/D "_UNICODE" 
+/D "UNICODE" 
+/Gm- /EHsc /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope 
+/Fp"C:\...\libdash\intermediate\clientdash\ReleaseWin32\clientdash.pch" 
+/Fa"C:\...\libdash\intermediate\clientdash\ReleaseWin32\" 
+/Fo"C:\...\libdash\intermediate\clientdash\ReleaseWin32\" 
+/Fd"C:\...\libdash\intermediate\clientdash\ReleaseWin32\vc100.pdb" 
+/Gd /analyze- /errorReport:queue 
+\end{lstlisting}

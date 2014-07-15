@@ -6,6 +6,7 @@
 W ramach projektu powstał odtwarzacz multimedialny umożliwiający adaptację strumieniowania w oparciu o standard DASH-MPEG. Poniższy rozdział zawiera informacje opisujące algorytm wykorzystany do implementacji strumieniowania adaptacyjnego. Pomysł algorytmu oparty o wykorzystanie strukturę kontrolera PID został zaczerpnięty z artykułu "Towards Agile and Smooth Video Adaptation in Dynamic HTTP Streaming"~\cite{Tian}. Dalsza część rozdziału skupia się na szczegółach implementacyjnych odtwarzacza oraz narzędziach i bibliotekach wykorzystanych do jego stworzenia.
 
 \section{Opis algorytmu}
+\label{sec:alg}
 
 Prezentowany poniżej algorytm służy do wygładzenia procesu adaptacji strumienia danych multimedialnych. Oznacza to, że przy dużej zmienności warunków panujących w sieci alogrytm będzie starał utrzymać jakość przesyłanych danych (reprezentację) na stabilnym poziomie. 
 
@@ -115,7 +116,7 @@ przechowywanych segmentów danych multimedialnych. Architektura wykorzystująca 
 
 Dane multimedialne są wyjmowane z bufora i dekodowane - zajmuje się tym \textit{Decoder}. Po przetworzeniu dane przekazywane są do komponentu \textit{Renderer} odpowiedzialnego za prezentację zdekodowanych danych użytkownikowi.
 
-\section{Szczegółowy opis implementacji}
+\section{Implementacja projektu odtwarzacza}
 
 \begin{sidewaysfigure}
 	\centering
@@ -124,7 +125,24 @@ Dane multimedialne są wyjmowane z bufora i dekodowane - zajmuje się tym \texti
 	\label{fig:Class}
 \end{sidewaysfigure}
 
+Diagram klas na rysunku \ref{fig:Class} przedstawia najważniejsze klasy i powiązania pomiędzy nimi. Poniższy podrozdział skupia się na wyjaśnieniu przeznaczenia poszczególnych klas oraz ich wzajemnych zależności.
+
+Obiekt klasy \textit{Downloader} jest odpowiedzialny za komunikację z serwerem HTTP i pobieraniem kolejnych segmentów danych multimedialnych. Podczas uruchamiania odtwarzacza należy podać lokalizację pliku MPD (Media Presentation Description), który następnie jest pobierany i parsowany przez obiekt implementujący interfejs \textit{IDASHManager} należący do biblioteki libdash. Pobieranie konkretnego segmentu jest delegowane do osobnego wątku wykonującego instrukcje funkcji \textit{bufferingProcedure}. W celu wybrania reprezentacji z której należy skorzystać przy pobieraniu segmentu danych multimedialnych \textit{Downloader} korzysta z klas implementujących \textit{IAdaptation}. Segmenty, których pobieranie zakończyło się sukcesem wkładane są do bufora implementującego interfejs \textit{IBuffer}. 
+
+Logika adaptacji strumienia polegająca na wyborze kolejnej wersji danych multimedialnych (ich reprezentacji) jest zawarta w klasach implementujących interfejs \textit{IAdaptation}. Obiekt klasy \textit{Downloader} korzysta z funkcji \textit{getSegment} w celu uzyskania nowego obiektu implementującego interfejs \textit{BufferItem}, który na obecnym etapie cyklu życia reprezentuje jeszcze nie pobrany segment danych. Obiekty klas implementujących \textit{IAdaptation} zajmują się wyborem reprezentacji, tworzeniem nowego obiektu obudowującego wybrany segment danych oraz przekazaniem go do obiektu \textit{Downloader}. Odtwarzacz pozwala na wybór algorytmu adaptacji. Obecnie możliwy jest wybór jednego z dwóch mechanizmów adaptacji:
+\begin{itemize}
+\item \textit{InteractiveAdaptaion} - pozwala na sterowanie wyborem reprezentacji w czasie rzeczywistym. Możliwy jest wybór dowolnej z reprezentacji opisanych w pliku MPD, którego lokalizacja została podana przy starcie odtwarzacza. W przypadku wyboru nieprawidłowej reprezentacji, odtwarzacz zwraca informację o błędzie i pracuje z wykorzystaniem poprzedniej reprezentacji.
+\item \textit{ConstantAdaptation} - wybór reprezentacji należy podać przy uruchamianiu odtwarzacza i pozostaje on niezmienny przez cały czas działania aplikacji. Jeżeli reprezentacja nie znajduje się w zbiorze dostępnych reprezentacji opisanych plikiem MPD to aplikacja odtwarzacza zostaje zamknięta i zwrócona zostaje informacja o błędzie.
+\item \textit{PIDAdaptaion} - adaptacja strumienia opierająca się o kontroler PID i algorytm opisany w podrozdziale \ref{sec:alg}. Adaptacja zachodzi automatycznie i nie wymaga interwencji użytkownika.
+\end{itemize}
+
+Obiekty klas implementujących \textit{IBufferItem} stanowią kontener na dane pobierane z serwera. Składają się przede wszystkim z obiektów klas należących do biblioteki libdash oraz zawierają stan pozwalający na stwierdzenie, czy segment, który obiekt reprezentuje został już pobrany. Można na nich wykonywać operacje rozpoczęcia pobierania (\textit{start}), oczekiwania na zakończenie pobierania (\textit{wait}) oraz operacje podglądania danych w segmencie i ich czytania.
+
+Klasa \textit{ThreadSafeBuffer} stanowi implementację interfejsu \textit{IBuffer}. Obiekt tej klasy pozwala na synchronizowany dostęp wielu wątków do kolejki zawierającej elemnty implementujące \textit{IBufferItem}. Wykorzystany został współbieżny wzorzec projektowy producent-konsument. Producentem jest obiekt klasy \textit{Downloader}, natomiast konsumentami mogą być obiekty typu \textit{Decoder}. Procedura \textit{push} pozwala na wkładanie elementów na początek bufora, natomiast procedura \textit{pop} zwraca ostatni element przy okazji usuwając go z bufora.
+
+\textit{Decoder} zajmuje się dekodowaniem danych zawartych w kolejnych segmentach. Po zdekodowaniu segmentu danych multimedialnych powiadamiane są obiekty odpowiedzialne za prezentację danych użytkownikowi. Klasy obiektów odpowiedzialnych za prezentację implementowane są jako obserwatory obiektów klasy \textit{Decoder}. \textit{Decoder} pozwala na rejestrację i odrejestrowanie wielu obiektów pozwalających na renderowanie danych audio oraz video.
+
 \section{Wykorzystane narzędzia i biblioteki}
 
-Projekt odtwarzacza powstał w języku C++ i z wykorzystaniem Microsoft Visual Studio 2010. Budowanie aplikacji odbywa się za pomocą programu CMake. Odtwarzacz korzysta z bibliotek libav, libcurl, libxml2, sdl, zlib oraz biblioteki libdash implementującej standard DASH-MPEG.
+Projekt odtwarzacza powstał w języku C++ i z wykorzystaniem Microsoft Visual Studio 2010. Budowanie aplikacji odbywa się za pomocą programu CMake. Odtwarzacz korzysta z bibliotek libav, libcurl, libxml2, sdl, zlib, boost oraz biblioteki libdash implementującej standard DASH-MPEG. Wykorzystany został system kontroli git.
 

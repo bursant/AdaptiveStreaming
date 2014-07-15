@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.7.1)  13 JUL 2014 15:38
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.7.1)  15 JUL 2014 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,29 +492,33 @@ File: lstlang2.sty 2013/08/26 1.5b listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2013/08/26 1.5b listings language file
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
 
 LaTeX Warning: Unused global option(s):
     [11pt].
 
 (./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
 (./rozdzial4.aux) (./rozdzial5.aux) (./rozdzial6.aux) (./rozdzial7.aux)
-(./dodatekA.aux))
+(./dodatekA.aux) (./dodatekB.aux))
 \openout1 = `praca.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 68.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -612,29 +616,29 @@ e
 <agh.jpg, id=1, 146.4672pt x 284.7438pt>
 File: agh.jpg Graphic file (type jpg)
  <use agh.jpg>
-Package pdftex.def Info: agh.jpg used on input line 70.
+Package pdftex.def Info: agh.jpg used on input line 93.
 (pdftex.def)             Requested size: 87.88098pt x 170.8476pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 70.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <12> not available
-(Font)              Font shape `T1/phv/b/sc' tried instead on input line 70.
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 93.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 70.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 70.
+(Font)              <10.95> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 70.
+(Font)              <8> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 70.
+(Font)              <6> on input line 93.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 70.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 93.
  [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./agh.jpg>]
@@ -644,9 +648,9 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 72.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 72.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 95.
 
 (./praca.toc [5
 
@@ -820,7 +824,7 @@ Rozdzia\l  5.
 <PID.png, id=138, 790.45313pt x 355.3275pt>
 File: PID.png Graphic file (type png)
  <use PID.png>
-Package pdftex.def Info: PID.png used on input line 22.
+Package pdftex.def Info: PID.png used on input line 23.
 (pdftex.def)             Requested size: 455.24411pt x 204.64244pt.
 
 
@@ -835,91 +839,95 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ImplementationConceptual.png Graphic file (type png)
 
 <use ImplementationConceptual.png>
-Package pdftex.def Info: ImplementationConceptual.png used on input line 99.
+Package pdftex.def Info: ImplementationConceptual.png used on input line 100.
 (pdftex.def)             Requested size: 455.24411pt x 293.5282pt.
  [38 <./ImplementationConceptual.png>]
 <Class.png, id=156, 788.19469pt x 434.37282pt>
 File: Class.png Graphic file (type png)
  <use Class.png>
-Package pdftex.def Info: Class.png used on input line 122.
+Package pdftex.def Info: Class.png used on input line 123.
 (pdftex.def)             Requested size: 630.55661pt x 347.49872pt.
-) [39] [40 <./Class.png>]
+ [39] [40 <./Class.png>]) [41]
 \openout2 = `rozdzial6.aux'.
 
- (./rozdzial6.tex
-Rozdzia\l  6.
-<lan.png, id=163, 552.56438pt x 349.305pt>
-File: lan.png Graphic file (type png)
- <use lan.png>
-Package pdftex.def Info: lan.png used on input line 9.
-(pdftex.def)             Requested size: 386.79242pt x 244.51183pt.
-) [41
-
-
-
- <./lan.png>]
-\openout2 = `rozdzial7.aux'.
-
-
-(./rozdzial7.tex [42
+ (./rozdzial6.tex [42
 
 
 
 ]
+Rozdzia\l  6.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 24.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [43]) [44]
+\openout2 = `rozdzial7.aux'.
+
+
+(./rozdzial7.tex
 Rozdzia\l  7.
-) [43]
+) [45
+
+
+
+]
 \openout2 = `dodatekA.aux'.
 
- (./dodatekA.tex [44
+ (./dodatekA.tex [46
 
 
 
 ]
 Dodatek A.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [45]) [46]
-No file praca.bbl.
-[47
+[47]) [48]
+\openout2 = `dodatekB.aux'.
+
+ (./dodatekB.tex
+Dodatek B.
+) [49
+
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+No file praca.bbl.
+[50
+
+
+] [51]
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 [] \T1/ptm/m/n/10.95 http://www.cisco.com/c/en/us/support/docs/collaboration-en
 dpoints/spa901-1-line-ip-
  []
 
-[48] (./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
+[52] (./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
 (./rozdzial4.aux) (./rozdzial5.aux) (./rozdzial6.aux) (./rozdzial7.aux)
-(./dodatekA.aux)) ) 
+(./dodatekA.aux) (./dodatekB.aux)) ) 
 Here is how much of TeX's memory you used:
- 6273 strings out of 494999
- 85159 string characters out of 6180802
- 170717 words of memory out of 5000000
- 9252 multiletter control sequences out of 15000+600000
- 82464 words of font info for 79 fonts, out of 8000000 for 9000
+ 6695 strings out of 494999
+ 88816 string characters out of 6180802
+ 180102 words of memory out of 5000000
+ 9665 multiletter control sequences out of 15000+600000
+ 83085 words of font info for 81 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 38i,12n,45p,2610b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/co
-urier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on praca.pdf (47 pages, 988180 bytes).
+ 38i,12n,45p,2610b,1164s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dv
+ips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
+hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on praca.pdf (51 pages, 953379 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 254 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
