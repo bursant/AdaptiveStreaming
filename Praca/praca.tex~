@@ -49,9 +49,9 @@
   showstringspaces=false,
   basicstyle={\small\ttfamily},
   numbers=none,
-  numberstyle=\tiny\color{gray},
+  numberstyle=\tiny\color{black},
   keywordstyle=\color{black},
-  commentstyle=\color{dkgreen},
+  commentstyle=\color{black},
   stringstyle=\color{black},
   breaklines=false,
   breakatwhitespace=true

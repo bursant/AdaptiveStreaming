@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.7.1)  15 JUL 2014 12:35
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.7.1)  24 JUL 2014 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10,8 +10,8 @@ Babel <3.9h> and hyphenation patterns for 3 languages loaded.
 Document Class: aghdpl 
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -497,7 +497,7 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 
 LaTeX Warning: Unused global option(s):
-    [11pt].
+    [12pt].
 
 (./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
 (./rozdzial4.aux) (./rozdzial5.aux) (./rozdzial6.aux) (./rozdzial7.aux)
@@ -597,12 +597,12 @@ e
 * \topmargin=-40.36447pt
 * \headheight=28.45274pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=28.45274pt
-* \marginparwidth=103.0pt
+* \marginparwidth=85.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -623,21 +623,21 @@ LaTeX Font Info:    Try loading font information for T1+phv on input line 93.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 93.
-LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <12> not available
+LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/sc' tried instead on input line 93.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 93.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <17.28> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 93.
+(Font)              <12> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 93.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 93.
  [1
 
@@ -647,115 +647,112 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 ] [1
 
 ]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 95.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 95.
 
-(./praca.toc [5
+(./praca.toc
+Underfull \vbox (badness 1072) has occurred while \output is active []
+
+ [5
 
 ])
 \tf@toc=\write4
 \openout4 = `praca.toc'.
 
- [6]
+
+[6]
 \openout2 = `rozdzial1.aux'.
 
  (./rozdzial1.tex
 Rozdzia\l  1.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
-) [7
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+
+Underfull \vbox (badness 5175) has occurred while \output is active []
+
+ [7
 
 
 
 ]
+[8]) [9]
 \openout2 = `rozdzial2.aux'.
 
- (./rozdzial2.tex [8
+ (./rozdzial2.tex [10
 
 
 
 ]
 Rozdzia\l  2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 12.
-<jitter.jpg, id=33, 1027.84pt x 459.7175pt>
+[11] <jitter.jpg, id=42, 1027.84pt x 459.7175pt>
 File: jitter.jpg Graphic file (type jpg)
  <use jitter.jpg>
 Package pdftex.def Info: jitter.jpg used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 203.61613pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9] <drop.png, id=37, 544.28343pt x 215.30438pt>
+<drop.png, id=43, 544.28343pt x 215.30438pt>
 File: drop.png Graphic file (type png)
  <use drop.png>
 Package pdftex.def Info: drop.png used on input line 26.
 (pdftex.def)             Requested size: 409.71692pt x 162.07251pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 2894) has occurred while \output is active []
-
- [10 <./jitter.jpg>] <audiovideobitrate.png, id=41, 652.68843pt x 301.8778pt>
+ [12 <./jitter.jpg>] [13 <./drop.png>] <audiovideobitrate.png, id=50, 652.68843
+pt x 301.8778pt>
 File: audiovideobitrate.png Graphic file (type png)
 
 <use audiovideobitrate.png>
 Package pdftex.def Info: audiovideobitrate.png used on input line 40.
 (pdftex.def)             Requested size: 455.24411pt x 210.5668pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11 <./drop.png>]
-Underfull \vbox (badness 4060) has occurred while \output is active []
-
- [12 <./audiovideobitrate.png>] <qosmodel.jpg, id=48, 371.13657pt x 261.22594pt
->
+ [14 <./audiovideobitrate.png>] [15]
+<qosmodel.jpg, id=58, 371.13657pt x 261.22594pt>
 File: qosmodel.jpg Graphic file (type jpg)
-
-<use qosmodel.jpg>
+ <use qosmodel.jpg>
 Package pdftex.def Info: qosmodel.jpg used on input line 65.
 (pdftex.def)             Requested size: 318.66948pt x 224.30313pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13] <tcpsynchro.jpg, id=52, 580.1675pt x 365.365pt>
+<tcpsynchro.jpg, id=59, 580.1675pt x 365.365pt>
 File: tcpsynchro.jpg Graphic file (type jpg)
  <use tcpsynchro.jpg>
 Package pdftex.def Info: tcpsynchro.jpg used on input line 74.
 (pdftex.def)             Requested size: 318.66948pt x 200.68376pt.
 
-[14 <./qosmodel.jpg> <./tcpsynchro.jpg>]
-<red.jpg, id=57, 421.575pt x 292.84406pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16] <red.jpg, id=63, 421.575pt x 292.84406pt>
 File: red.jpg Graphic file (type jpg)
  <use red.jpg>
 Package pdftex.def Info: red.jpg used on input line 85.
 (pdftex.def)             Requested size: 364.19667pt x 252.98936pt.
- [15 <./red.jpg>]
-<pim.jpg, id=61, 790.45313pt x 497.60907pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./qosmodel.jpg> <./tcpsynchro.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./red.jpg>] <pim.jpg, id=70, 790.45313pt x 497.60907pt>
 File: pim.jpg Graphic file (type jpg)
  <use pim.jpg>
 Package pdftex.def Info: pim.jpg used on input line 105.
 (pdftex.def)             Requested size: 455.24411pt x 286.58615pt.
- [16 <./pim.jpg>])
-[17]
+ [19 <./pim.jpg>]) [20]
 \openout2 = `rozdzial3.aux'.
 
- (./rozdzial3.tex [18
-
-
-
-]
+ (./rozdzial3.tex
 Rozdzia\l  3.
-<handshake.png, id=71, 748.396pt x 354.926pt>
+<handshake.png, id=78, 748.396pt x 354.926pt>
 File: handshake.png Graphic file (type png)
  <use handshake.png>
 Package pdftex.def Info: handshake.png used on input line 16.
@@ -764,156 +761,192 @@ Package pdftex.def Info: handshake.png used on input line 16.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] [20 <./handshake.png>] <TCP_DCCP.png, id=83, 416.30531pt x 289.83281pt>
+
+Underfull \vbox (badness 5504) has occurred while \output is active []
+
+ [21
+
+
+
+]
+[22 <./handshake.png>] [23] <TCP_DCCP.png, id=94, 416.30531pt x 289.83281pt>
 File: TCP_DCCP.png Graphic file (type png)
 
 <use TCP_DCCP.png>
 Package pdftex.def Info: TCP_DCCP.png used on input line 56.
 (pdftex.def)             Requested size: 416.30429pt x 289.83209pt.
+ [24 <./TCP_DCCP.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+<rtsp.jpg, id=101, 240.14719pt x 211.54031pt>
+File: rtsp.jpg Graphic file (type jpg)
+ <use rtsp.jpg>
+Package pdftex.def Info: rtsp.jpg used on input line 122.
+(pdftex.def)             Requested size: 240.14658pt x 211.53978pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21] [22 <./TCP_DCCP.png>] [23] <rtsp.jpg, id=95, 240.14719pt x 211.54031pt>
-File: rtsp.jpg Graphic file (type jpg)
-
-<use rtsp.jpg>
-Package pdftex.def Info: rtsp.jpg used on input line 122.
-(pdftex.def)             Requested size: 240.14658pt x 211.53978pt.
- [24 <./rtsp.jpg>]) [25]
+[26] [27 <./rtsp.jpg>]) [28]
 \openout2 = `rozdzial4.aux'.
 
- (./rozdzial4.tex [26
-
-
-
-]
+ (./rozdzial4.tex
 Rozdzia\l  4.
-[27] <dash.png, id=109, 327.624pt x 188.8656pt>
+[29
+
+
+
+] <dash.png, id=115, 327.624pt x 188.8656pt>
 File: dash.png Graphic file (type png)
  <use dash.png>
 Package pdftex.def Info: dash.png used on input line 25.
 (pdftex.def)             Requested size: 327.62318pt x 188.86513pt.
- [28 <./dash.png>] <segmentalignment.png, id=114, 903.375pt x 452.69125pt>
+ [30 <./dash.png>] <segmentalignment.png, id=120, 903.375pt x 452.69125pt>
 File: segmentalignment.png Graphic file (type png)
 
 <use segmentalignment.png>
 Package pdftex.def Info: segmentalignment.png used on input line 38.
 (pdftex.def)             Requested size: 455.24411pt x 228.13411pt.
- [29 <./segmentalignment.png>]
-<mpd.png, id=119, 441.90094pt x 231.86626pt>
+ [31 <./segmentalignment.png>]
+<mpd.png, id=125, 441.90094pt x 231.86626pt>
 File: mpd.png Graphic file (type png)
  <use mpd.png>
 Package pdftex.def Info: mpd.png used on input line 63.
 (pdftex.def)             Requested size: 455.24411pt x 238.87796pt.
- [30 <./mpd.png>]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+ [32]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 78.
-
-[31] <clientmodel.png, id=127, 472.01344pt x 118.19156pt>
+ [33 <./mpd.png>] <clientmodel.png, id=134, 472.01344pt x 118.19156pt>
 File: clientmodel.png Graphic file (type png)
-
-<use clientmodel.png>
+ <use clientmodel.png>
 Package pdftex.def Info: clientmodel.png used on input line 93.
 (pdftex.def)             Requested size: 455.24411pt x 113.99461pt.
- [32 <./clientmodel.png>] [33]) [34]
-\openout2 = `rozdzial5.aux'.
-
- (./rozdzial5.tex
-Rozdzia\l  5.
-<PID.png, id=138, 790.45313pt x 355.3275pt>
-File: PID.png Graphic file (type png)
- <use PID.png>
-Package pdftex.def Info: PID.png used on input line 23.
-(pdftex.def)             Requested size: 455.24411pt x 204.64244pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35
+[34] [35 <./clientmodel.png>]
+Underfull \vbox (badness 2426) has occurred while \output is active []
+
+ [36])
+[37]
+\openout2 = `rozdzial5.aux'.
+
+ (./rozdzial5.tex [38
 
 
 
-] [36 <./PID.png>] [37]
-<ImplementationConceptual.png, id=151, 561.59813pt x 362.10281pt>
+]
+Rozdzia\l  5.
+<PID.png, id=151, 790.45313pt x 355.3275pt>
+File: PID.png Graphic file (type png)
+ <use PID.png>
+Package pdftex.def Info: PID.png used on input line 23.
+(pdftex.def)             Requested size: 455.24411pt x 204.64244pt.
+ [39] [40 <./PID.png>] [41] <ImplementationConceptual.png, id=161, 561.59813pt 
+x 362.10281pt>
 File: ImplementationConceptual.png Graphic file (type png)
 
 <use ImplementationConceptual.png>
 Package pdftex.def Info: ImplementationConceptual.png used on input line 100.
 (pdftex.def)             Requested size: 455.24411pt x 293.5282pt.
- [38 <./ImplementationConceptual.png>]
-<Class.png, id=156, 788.19469pt x 434.37282pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42] <Class.png, id=168, 788.19469pt x 434.37282pt>
 File: Class.png Graphic file (type png)
  <use Class.png>
 Package pdftex.def Info: Class.png used on input line 123.
 (pdftex.def)             Requested size: 630.55661pt x 347.49872pt.
- [39] [40 <./Class.png>]) [41]
+ [43 <./ImplementationConceptual.png>] [44 <./Class.png>] [45]) [46]
 \openout2 = `rozdzial6.aux'.
 
- (./rozdzial6.tex [42
-
-
-
-]
+ (./rozdzial6.tex
 Rozdzia\l  6.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 24.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [43]) [44]
+)
+Overfull \hbox (24.36977pt too wide) in paragraph at lines 32--33
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[47
+
+
+
+] [48]) [49]
 \openout2 = `rozdzial7.aux'.
 
-
-(./rozdzial7.tex
-Rozdzia\l  7.
-) [45
+ (./rozdzial7.tex [50
 
 
 
 ]
+Rozdzia\l  7.
+) [51]
 \openout2 = `dodatekA.aux'.
 
- (./dodatekA.tex [46
+ (./dodatekA.tex [52
 
 
 
 ]
 Dodatek A.
-[47]) [48]
+
+Overfull \hbox (41.55568pt too wide) in paragraph at lines 69--69
+[]\T1/pcr/m/n/12 mls qos aggregate-policer aggpolicer 10000000 8000 exceed-acti
+on drop[] 
+ []
+
+[53]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54])
+[55]
 \openout2 = `dodatekB.aux'.
 
- (./dodatekB.tex
-Dodatek B.
-) [49
+ (./dodatekB.tex [56
 
 
 
 ]
-No file praca.bbl.
-[50
+Dodatek B.
 
-
-] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-[] \T1/ptm/m/n/10.95 http://www.cisco.com/c/en/us/support/docs/collaboration-en
-dpoints/spa901-1-line-ip-
+Overfull \hbox (11.22966pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
  []
 
-[52] (./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
+) [57]
+No file praca.bbl.
+[58
+
+
+] [59]
+Underfull \hbox (badness 7722) in paragraph at lines 186--187
+[] \T1/ptm/m/n/12 http://www.cisco.com/c/en/us/support/docs/collaboration-endpo
+ints/spa901-1-line-ip-
+ []
+
+[60] (./praca.aux (./rozdzial1.aux) (./rozdzial2.aux) (./rozdzial3.aux)
 (./rozdzial4.aux) (./rozdzial5.aux) (./rozdzial6.aux) (./rozdzial7.aux)
 (./dodatekA.aux) (./dodatekB.aux)) ) 
 Here is how much of TeX's memory you used:
- 6695 strings out of 494999
- 88816 string characters out of 6180802
- 180102 words of memory out of 5000000
- 9665 multiletter control sequences out of 15000+600000
- 83085 words of font info for 81 fonts, out of 8000000 for 9000
+ 6691 strings out of 494999
+ 88778 string characters out of 6180802
+ 178099 words of memory out of 5000000
+ 9662 multiletter control sequences out of 15000+600000
+ 82165 words of font info for 78 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 38i,12n,45p,2610b,1164s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,45p,2610b,1751s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dv
 ips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
+mmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
@@ -924,10 +957,10 @@ hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><
 ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on praca.pdf (51 pages, 953379 bytes).
+Output written on praca.pdf (59 pages, 966175 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
+ 279 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

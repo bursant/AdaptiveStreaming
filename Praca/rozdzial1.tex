@@ -1,9 +1,46 @@
 \chapter{Wprowadzenie}
 \label{cha:rozdzial1}
 
+Zapotrzebowanie na technologie transferu danych istnieje od wielu lat i stale rośnie. Do pierwszych technologii tego typu zaliczyć można usługi pocztowe, telegrafy oraz pierwsze linie telefoniczne. Wraz ze wzrostem popytu rozpoczynano prace nad kolejnymi technologiami takimi jak telewizja oraz Internet.
+
+Pierwsze sieci komputerowe zaczęły pojawiać się w latach sześćdziesiątych i siedemdziesiątych XX wieku. Za przodka dzisiejszego Internetu uważana jest sieć ARPANET. Twórcy sieci ARPANET dostarczyli medium komunikacyjne pozwalające na szybkie jak na ówczesne czasy przesyłanie informacji nawet w przypadku częściowego uszkodzenia infrastruktury. Na bazie dostarczonego rozwiązania zaczęto rozwijać usługi takie jak poczta elektroniczna oraz komunikatory. Komunikatory to programy pozwalające na przesyłanie wiadomości z małym opóźnieniem, co po stronie użytkowników sprawiało wrażenie natychmiastowej komunikacji.
+
+Wraz ze wzrostem dostępności sieci komputerowych zaczęło pojawiać się wiele aplikacji i standardów przesyłania danych. Niektóre z tych technologii mogły zaistnieć tylko dzięki zwiększeniu się przepustowości i minimalizacji opóźnienia w sieciach komputerowych. Należą do nich między innymi \textit{VoIP}\footnote{Voice over IP - technika przesyłania głosu w sieciach IP opartych o pakiety.}, wideokonferencje\footnote{Przykładem aplikacji do videokonferencji wymagającej dużych przepustowości (rzędu Mb/s) i pozwalającej na przesyłanie obrazu w HD jest system Telepresence.} oraz strumieniowanie danych multimedialnych.
+
+Strumieniowanie danych to technika pozwalająca na odtwarzanie na bieżąco zasobów należących do innego komputera z wykorzystaniem sieci komputerowej. Dzięki takiemu rozwiązaniu odbiorca nie musi przechowywać danych z których korzysta na własnym komputerze. Zwykle wyróżnia się dwa tryby dostępu do strumieniowanych danych:
 \begin{itemize}
-\item Cel pracy - skąd się wziął pomysł, dlaczego praca jest tworzona
-\item Struktura - krótki opis dotyczący kolejnych rozdziałów
-\item Zakres merytoryczny - ramy dla projektu
-\item Wkład własny - krótki opis co się zrobiło i jak przebiegały prace.
+\item na żywo (\textit{ang. live}) - transmisja danych w czasie rzeczywistym wymagająca małego opóźnienia. Dane przesyłane są do użytkowników zaraz po ich nagraniu oraz kodowaniu. Przykładem tego trybu jest transmisja na żywo z meczu piłki nożnej.
+\item na życzenie (\textit{ang. on demand}) - serwer posiada bazę danych multimedialnych z której użytkownik może wybrać dane z których chce skorzystać. Przykładem może być portal \textit{www.youtube.pl}\footnote{Portal pozwalający użytkownikom na zamieszczanie filmów i ich otwarzanie.}.
 \end{itemize}
+Do popularnych aplikacji udostępniająych użytkownikom funkcję strumieniowania należą \textit{VideoLAN}, \textit{Apple QuickTime} oraz \textit{Microsoft Windows Media}. Powyższe programy zwykle do celów strumieniowania korzystają z protokołów \textit{HTTP}, \textit{RSTP/RTP} lub \textit{MMS}.
+
+\section{Cel i zakres pracy}
+
+Głównym celem pracy jest zbadanie możliwości wykorzystania standardu DASH-MPEG\footnote{Standard DASH-MPEG (Dynamic Adaptive Streaming over HTTP) jest adaptacyjną techniką strumieniowania danych w sieciach komputerowych.} w zakresie adaptacyjnego strumieniowania danych multimedialnych. W celu sprawdzenia przydatności standardu jako techniki strumieniowania stworzone zostały program odtwarzacza multimedialnego oraz zaimplementowany został algorytm pozwalający na automatyczną zmianę reprezentacji danych\footnote{Standard DASH-MPEG pozwala na przełączanie pomiędzy różnymi reprezentacjami tych samych danych. Dane te zwykle różnią się parametrem bitrate oraz jakością.}. Odtwarzacz napisany został w języku C++ i wykorzystuje bibliotekę \textit{libdash}\footnote{biblioteka open-source dostarczająca interfejs dla standardu DASH-MPEG.} implementującą standard DASH-MPEG. Następnie przeporowadzone zostały testy działania aplikacji oraz testy algorytmu pozwalającego na adaptację strumienia danych do warunków panujących w sieciach komputerowch (np. zmienna dostępna przepustowość oraz opóźnienie).
+
+\section{Struktura pracy}
+
+Całość pracy składa się z siedmiu rozdziałów oraz dodatków oznaczonych kolejnymi literami alfabetu. Dodatki umieszczone zostały na końcu pracy po ostatnim rozdziale.
+
+Rozdział pierwszy stanowi wprowadzenie do tematyki transferu danych, przedstawia cel pracy oraz jej strukturę.
+
+Rozdział drugi został poświęcony problematyce strumieniowania danych. Zostały w nim opisane zjawiska występujące podczas strumieniowania danych oraz wpływ zmiennych warunków w sieci na aktywne transmisje. Zwrócono także uwagę na wpływ konfiguracji urządzeń na strumienie danych oraz sposoby dostarczania danych do wielu odbiorców. 
+
+W rodziale trzecim skupiono się na konkretnych technologiach pozwalających na strumieniowanie danych. Opisane zostały protokoły:
+\begin{itemize}
+\item TCP (Transmission Control Protocol)
+\item DCCP (Datagram Congestion Control Protocol)
+\item RTP/RTCP (Real-time Transport Protocol i RTP Control Protocol)
+\end{itemize}
+
+Rozdział czwarty poświęcono w całości standardowi DASH-MPEG. Rozpoczyna go krótki zarys historyczny standardu, po którym następuje wysokopoziomowy opis systemów implementujących ten standard. Przedstawiona zostaje struktura modelu wykorzystywanego do przechowywania danych multimedialnych na serwerze oraz pozostałe opcje standardu takie jak osie czasu i profile.
+
+Kolejny z rozdziałów zawiera szczegółowy opis wykorzystanego algorytmu adaptacji oraz projektu odtwarzacza multimedialnego. Przedstawione zostają także narzędzia, które posłużyły do implementacji rozwiązania.
+
+Rozdział siódmy opisuje sposób instalacji odtwarzacza oraz zawiera instrukcję użytkownika. Zaprezentowane zostają także testy z działania algortymu i aplikacji.
+
+Ostatni rozdział stanowi podsumowanie pracy. W sposób zwięzły opisuje co udało się osiągnąć i jakie są dalsze możliwe kierunki rozwoju projektu.
+
+\section{Harmonogram prac}
+
+Praca została poprzedzona implementacją odtwarzacza i algorytmu. Prace nad projektem trwały od lipca 2013 roku do kwietnia 2014. W ramach projektu napisano odtwarzacz multimedialny wykorzystujący standard DASH-MPEG i algortym adpatacji strumieniowania oraz stworzono środowisko testowe i skrypty usprawniające wdrożenie i testowanie. Tekst pracy powstał po zakończeniu prac nad projektem. Jego tworzenie i redakcja trwały od maja 2014 do sierpnia 2014.
